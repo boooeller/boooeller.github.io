@@ -18,10 +18,11 @@ html {
   background: #ffffff;
 }
 .userinfo {
-  height: 219px;
   margin: 0 auto;
   padding-top: 50px;
-  
+}
+.foto {
+  margin: 26px 0 0 0; 
 }
 .userinfo, .content, .feedback {
   width: 412px;
@@ -41,7 +42,7 @@ h2 {
 img {
   height: 127px;
   display: block;
-  margin: 26px auto 0 auto;
+  margin: 0 auto 0 auto;
 }
 p, li {
   font-size: 18px;
@@ -53,7 +54,7 @@ p {
   padding-left: 10px;
 }
 ul {
-  padding: 32px 0 19px 35px;
+  padding: 32px 0 15px 35px;
 }
  
 li {
@@ -62,6 +63,6 @@ li {
 .profile {
   padding-top: 26px;
 } 
-.link {
+.link, .speciality {
   padding-bottom: 13px;
 }
