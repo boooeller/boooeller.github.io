@@ -1,0 +1,180 @@
+/*
+1. Что лучше для .контент ширина или отступы?
+2. Как прописать для .тест без класа?
+*/
+
+body {
+	background: #bfbfbf;
+}
+
+.wrapper {
+	border: -webkit-box-shadow: 0px 0px 1px 1px rgba(128,128,128,1);
+			-moz-box-shadow: 0px 0px 1px 1px rgba(128,128,128,1);
+			box-shadow: 0px 0px 1px 1px rgba(128,128,128,1);
+	width: 1369px;
+	min-height: 956px;
+	margin: 100px;
+	background: #f9f9f9;
+}
+
+.content {
+	border: -webkit-box-shadow: 0px 0px 3px 1px rgba(199,199,199,1);
+			-moz-box-shadow: 0px 0px 3px 1px rgba(199,199,199,1);
+			box-shadow: 0px 0px 3px 1px rgba(199,199,199,1);
+	margin: 0 auto;
+	width: 1061px;
+	min-height: 956px;
+	background: #ffffff;
+}
+
+.logo {
+	padding: 50px 0 0 47px;
+}
+
+.menu li {
+	display: inline;
+	line-height: 40px;
+	font-size: 14px;
+	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
+}
+
+.menu {
+	
+	margin: 40px 47px 0 47px;
+	background: linear-gradient(to top, #444343, #5d5d5d);
+}
+
+.menu li a {
+	color: white;
+	text-decoration: none;
+	padding: 0 24px 0 24px;
+}
+
+.menu ul {
+	font-size: 0;
+	line-height: 0;
+}
+
+.menu li a:hover {
+	background: linear-gradient(to top, #2e2e2e, #5d5d5d);
+	display: inline-block;
+	border-left: 1px solid #838383;
+	border-right: 1px solid #838383;
+}
+
+.menu .test {
+	padding-right: 65px;
+} 
+
+.menu .test2 {
+	padding: 0 63px 0 63px;
+}
+
+.menu .test3 {
+	padding: 0 27px 0 27px;
+}
+
+.test5:link {
+	background: linear-gradient(to top, #2e2e2e, #5d5d5d);
+	display: inline-block;
+	border-left: 1px solid #838383;
+	border-right: 1px solid #838383;
+}
+
+.nav {
+	border: 1px solid #c8c8c8;
+	width: 239px;
+	margin: 40px 0 0 47px;
+	float: left;
+}
+
+.nav li {
+	line-height: 40px;
+	border-bottom: 1px solid #c8c8c8;
+}
+
+.nav a {
+	text-decoration: none;
+	padding: 0 150px 0 24px;
+	color: #656363;
+	font-size: 13px;
+	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
+		
+}
+
+.nav li:last-child {
+	border-bottom-style: none;
+}
+
+}
+.nav a:hover {
+	color: #2c2c2c;
+	background: #f9f9f9;
+	padding-left: 35px;
+	display: block;
+}
+
+#test4 {
+	padding-right: 105px;
+}
+
+.test6:link {
+	color: #2c2c2c;
+	background: #f9f9f9;
+	padding-left: 35px;
+	display: block;
+}
+
+.pic_text {
+	width: 677px;
+	float: right;
+	margin: 40px 47px 0 0;
+}
+
+.pic {
+	width: 500px;
+	height: 307px;
+	border: 1px solid #c8c8c8;
+	padding: 48px 87px 45px 90px;
+}
+
+.text {
+	margin: 40px 28px 0 24px;
+	font-size: 13px;
+	color: #2c2c2c;
+	line-height: 22px;
+	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
+}
+
+.footer {
+	background: #e1e1e1;
+	height: 40px;
+	width: 966px;
+	margin-top: 698px;
+	margin-left: 47px;
+}
+
+.footer li {
+	float: left;
+	line-height: 42px;
+	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+.footer a {
+	text-decoration: none;
+	padding: 0 74px 0 24px;
+	color: #2c2c2c; 
+} 
+
+.footer a:hover {
+	text-decoration: underline;
+}
+
+.footer ul li:last-child {
+	padding-left: 208px;
+}
+
+.test7:link {
+	text-decoration: underline;
+}
