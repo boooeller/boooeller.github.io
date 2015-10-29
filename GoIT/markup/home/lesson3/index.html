@@ -1,53 +1,157 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Finess</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<div class="wrapper">
-		<div class="logo">
-			<a href="#"><img src="img/logo.jpg" alt="Логотип"></a>
-		</div>
-		<div class="menu">
-			<ul>
-				<li><a href="#" class="test">Главная</a></li>
-				<li><a href="#" class="test5">Товары</a></li>
-				<li><a href="#" class="test2">О_нас</a></li>
-				<li><a href="#" class="test3">Контакты</a></li>
-			</ul>
-		</div>
-		<div class="main">
-			<div class="nav">
-				<ul>
-					<li><a href="#">Ноутбуки</a></li>
-					<li><a href="#">Планшеты</a></li>
-					<li><a href="#" class="test6">Телефоны</a></li>
-					<li><a href="#">Телевизоры</a></li>
-					<li><a href="#" id="test4">Бытовая техника</a></li>
-					<li><a href="#">Автотовары</a></li>
-				</ul>
-			</div>
-			<div class="pic_text">
-				<div class="pic">
-					<img src="img/bike.jpg" alt="Лисапет">
-				</div>
-				<div class="text">
-					Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.
-				</div>
-			</div>
-		</div>
-		<div class="footer">
-			<ul>
-				<li><a href="#">Главная</a></li>
-				<li><a href="#" class="test7">Товары</a></li>
-				<li><a href="#">О_нас</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>	
-			<div class="copy">2014 &#169; All rights reserved</div>
-		</div>	
-	</div>
-</body>
-</html>
+/*
+2. Как прописать для .тест без класа?
+*/
+
+body {
+	background: #f9f9f9;
+	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+	border: -webkit-box-shadow: 0px 0px 3px 1px rgba(199,199,199,1);
+			-moz-box-shadow: 0px 0px 3px 1px rgba(199,199,199,1);
+			box-shadow: 0px 0px 3px 1px rgba(199,199,199,1);
+	margin: 0 auto;
+	width: 1061px;
+	min-height: 956px;
+	background: #ffffff;
+}
+
+.logo {
+	padding: 50px 0 0 47px;
+}
+
+.menu li {
+	display: inline;
+	line-height: 40px;
+	font-size: 14px;
+}
+
+.menu {
+	margin: 40px 47px 0 47px;
+	background: linear-gradient(to top, #444343, #5d5d5d);
+}
+
+.menu li a {
+	color: white;
+	text-decoration: none;
+	padding: 0 40px;
+	display: inline-block;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+}
+
+.menu ul {
+	font-size: 0;
+	line-height: 0;
+}
+
+.menu li a:hover {
+	background: linear-gradient(to top, #2e2e2e, #5d5d5d);
+	border-left: 1px solid #838383;
+	border-right: 1px solid #838383;
+}
+
+ .content {
+	margin: 40px 47px 0 47px;
+	/*overflow: hidden;
+	position: relative;*/
+	
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.nav {
+	border: 1px solid #c8c8c8;
+	width: 239px;
+	float: left;
+}
+
+.nav li {
+	line-height: 40px;
+	border-bottom: 1px solid #c8c8c8;
+	width: 239px;
+	height: 40px;
+}
+
+.nav a {
+	text-decoration: none;
+	padding-left: 24px;
+	color: #656363;
+	font-size: 13px;
+	background: #ffffff;
+	display: block;
+}
+
+.nav li:last-child {
+	border-bottom-style: none;
+}
+
+.nav a:hover {
+	background: #f9f9f9;
+	color: #2c2c2c;
+	padding-left: 35px;
+}
+
+.test6:link {
+	background: #f9f9f9;
+	color: #2c2c2c;
+	padding-left: 35px;
+}
+
+.pic_text {
+	width: 677px;
+	float: right;
+}
+
+.pic {
+	width: 500px;
+	height: 307px;
+	border: 1px solid #c8c8c8;
+	padding: 48px 87px 45px 90px;
+}
+
+.text {
+	margin: 40px 28px 0 24px;
+	font-size: 13px;
+	color: #2c2c2c;
+	line-height: 22px;
+}
+
+.footer {
+	background: #e1e1e1;
+	height: 40px;
+	width: 966px;
+	margin: 50px 47px 0 47px;
+	line-height: 40px;
+	
+}
+
+.footer li {
+	float: left;
+	font-size: 13px;
+}
+
+.footer a {
+	text-decoration: none;
+	margin: 0 74px 0 24px;
+	color: #2c2c2c; 
+} 
+
+.footer a:hover {
+	text-decoration: underline;
+}
+
+.copy {
+	float: right;
+	font-size: 13px;
+	margin-right: 23px;
+}
+
+.test7:link {
+	text-decoration: underline;
+}
