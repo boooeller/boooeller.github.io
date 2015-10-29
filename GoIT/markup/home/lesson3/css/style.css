@@ -133,6 +133,10 @@ body {
 	font-size: 13px;
 }
 
+.footer ul {
+	float: left;
+}
+
 .footer a {
 	text-decoration: none;
 	margin: 0 74px 0 24px;
