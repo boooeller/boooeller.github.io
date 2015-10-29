@@ -52,29 +52,14 @@ body {
 	border-right: 1px solid #838383;
 }
 
- /* .test5:link {
-	background: linear-gradient(to top, #2e2e2e, #5d5d5d);
-	border-left: 1px solid #838383;
-	border-right: 1px solid #838383;
-}  */
-
-/* .menu .test {
-	padding-right: 65px;
-} 
-
-.menu .test2 {
-	padding: 0 63px 0 63px;
+ .content {
+	margin: 40px 47px 0 47px;
 }
 
-.menu .test3 {
-	padding: 0 27px 0 27px; */
-
-
-.main {
-	margin: 40px 47px 0 47px;
-	overflow: hidden;
-	position: relative;
-	
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
 }
 
 .nav {
