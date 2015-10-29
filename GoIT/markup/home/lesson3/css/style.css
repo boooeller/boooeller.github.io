@@ -72,6 +72,9 @@ body {
 
 .main {
 	margin: 40px 47px 0 47px;
+	overflow: hidden;
+	position: relative;
+	
 }
 
 .nav {
@@ -135,8 +138,9 @@ body {
 	background: #e1e1e1;
 	height: 40px;
 	width: 966px;
-	margin: 698px 47px 0 47px;
+	margin: 50px 47px 0 47px;
 	line-height: 40px;
+	
 }
 
 .footer li {
