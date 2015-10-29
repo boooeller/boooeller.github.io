@@ -1,12 +1,10 @@
 /*
-1. Что лучше для .контент ширина или отступы?
 2. Как прописать для .тест без класа?
-3. Для .test6:link почему то не работают свайства цвет и фон?
-4. Для .test5:link почему то не работает заданый цвет бордера, а отображается белый?
 */
 
 body {
 	background: #f9f9f9;
+	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
 }
 
 .wrapper {
@@ -19,10 +17,6 @@ body {
 	background: #ffffff;
 }
 
-.content {
-	
-}
-
 .logo {
 	padding: 50px 0 0 47px;
 }
@@ -31,7 +25,6 @@ body {
 	display: inline;
 	line-height: 40px;
 	font-size: 14px;
-	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
 }
 
 .menu {
@@ -42,8 +35,10 @@ body {
 .menu li a {
 	color: white;
 	text-decoration: none;
-	padding: 0 24px 0 24px;
+	padding: 0 40px;
 	display: inline-block;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
 }
 
 .menu ul {
@@ -57,13 +52,13 @@ body {
 	border-right: 1px solid #838383;
 }
 
-.test5:link {
+ /* .test5:link {
 	background: linear-gradient(to top, #2e2e2e, #5d5d5d);
 	border-left: 1px solid #838383;
 	border-right: 1px solid #838383;
-}
+}  */
 
-.menu .test {
+/* .menu .test {
 	padding-right: 65px;
 } 
 
@@ -72,8 +67,8 @@ body {
 }
 
 .menu .test3 {
-	padding: 0 27px 0 27px;
-}
+	padding: 0 27px 0 27px; */
+
 
 .main {
 	margin: 40px 47px 0 47px;
@@ -90,8 +85,6 @@ body {
 	border-bottom: 1px solid #c8c8c8;
 	width: 239px;
 	height: 40px;
-	
-	
 }
 
 .nav a {
@@ -99,7 +92,6 @@ body {
 	padding-left: 24px;
 	color: #656363;
 	font-size: 13px;
-	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
 	background: #ffffff;
 	display: block;
 }
@@ -123,7 +115,6 @@ body {
 .pic_text {
 	width: 677px;
 	float: right;
-	
 }
 
 .pic {
@@ -138,27 +129,24 @@ body {
 	font-size: 13px;
 	color: #2c2c2c;
 	line-height: 22px;
-	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
 }
 
 .footer {
 	background: #e1e1e1;
 	height: 40px;
 	width: 966px;
-	margin-top: 698px;
-	margin-left: 47px;
+	margin: 698px 47px 0 47px;
+	line-height: 40px;
 }
 
 .footer li {
 	float: left;
-	line-height: 40px;
-	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
 	font-size: 13px;
 }
 
 .footer a {
 	text-decoration: none;
-	padding: 0 74px 0 24px;
+	margin: 0 74px 0 24px;
 	color: #2c2c2c; 
 } 
 
@@ -167,15 +155,11 @@ body {
 }
 
 .copy {
-	line-height: 40px;
-	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
+	float: right;
 	font-size: 13px;
+	margin-right: 23px;
 }
 
 .test7:link {
 	text-decoration: underline;
-}
-
-.footer li:last-child {
-	padding-right: 181px;	
 }
