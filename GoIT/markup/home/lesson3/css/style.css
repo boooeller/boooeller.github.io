@@ -6,17 +6,10 @@
 */
 
 body {
-	background: #bfbfbf;
-}
-
-.wrapper {
-	border: -webkit-box-shadow: 0px 0px 1px 1px rgba(128,128,128,1);
-			-moz-box-shadow: 0px 0px 1px 1px rgba(128,128,128,1);
-			box-shadow: 0px 0px 1px 1px rgba(128,128,128,1);
 	background: #f9f9f9;
 }
 
-.content {
+.wrapper {
 	border: -webkit-box-shadow: 0px 0px 3px 1px rgba(199,199,199,1);
 			-moz-box-shadow: 0px 0px 3px 1px rgba(199,199,199,1);
 			box-shadow: 0px 0px 3px 1px rgba(199,199,199,1);
@@ -24,6 +17,10 @@ body {
 	width: 1061px;
 	min-height: 956px;
 	background: #ffffff;
+}
+
+.content {
+	
 }
 
 .logo {
@@ -78,10 +75,13 @@ body {
 	padding: 0 27px 0 27px;
 }
 
+.main {
+	margin: 40px 47px 0 47px;
+}
+
 .nav {
 	border: 1px solid #c8c8c8;
 	width: 239px;
-	margin: 40px 0 0 47px;
 	float: left;
 }
 
@@ -123,7 +123,7 @@ body {
 .pic_text {
 	width: 677px;
 	float: right;
-	margin: 40px 47px 0 0;
+	
 }
 
 .pic {
@@ -151,7 +151,7 @@ body {
 
 .footer li {
 	float: left;
-	line-height: 42px;
+	line-height: 40px;
 	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
 	font-size: 13px;
 }
@@ -166,10 +166,16 @@ body {
 	text-decoration: underline;
 }
 
-.footer ul li:last-child {
-	padding-left: 208px;
+.copy {
+	line-height: 40px;
+	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
+	font-size: 13px;
 }
 
 .test7:link {
 	text-decoration: underline;
+}
+
+.footer li:last-child {
+	padding-right: 181px;	
 }
