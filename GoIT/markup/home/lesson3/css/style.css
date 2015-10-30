@@ -121,8 +121,6 @@ body {
 
 .footer {
 	background: #e1e1e1;
-	height: 40px;
-	width: 966px;
 	margin: 50px 47px 0 47px;
 	line-height: 40px;
 	
@@ -131,6 +129,7 @@ body {
 .footer li {
 	float: left;
 	font-size: 13px;
+	margin: 0 30px;
 }
 
 .footer ul {
@@ -139,7 +138,6 @@ body {
 
 .footer a {
 	text-decoration: none;
-	margin: 0 74px 0 24px;
 	color: #2c2c2c; 
 } 
 
