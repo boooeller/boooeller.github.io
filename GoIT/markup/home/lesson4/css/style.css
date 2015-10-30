@@ -1,7 +1,14 @@
 body {
 	background-image: url(../img/body_bg.jpg);
-	min-height: 1020px;
+	background-repeat: repeat-x;
+	background-size: 1px;
+	background-position: top center;
+	background-color: #0C739F; 
+	
+
+	
 }
+
 .wrapper {
 	width: 1000px;
 	min-height: 1000px;
@@ -24,8 +31,6 @@ body {
 }
 
 .logo {
-	width: 250px;
-	height: 100px;
 	margin-top: 45px;
 	float: left;
 }
@@ -58,7 +63,6 @@ body {
 }
 
 .countries {
-	width: 384px;
 	float: right;
 	margin-top: 33px;
 }
@@ -78,8 +82,8 @@ body {
 }
 
 .photo {
-	min-height: 237px;
-	background-image: url(../img/photo.jpg);
+	height: 237px;
+	
 }
 
 .nav {
@@ -89,14 +93,15 @@ body {
 	min-height: 30px;
 	background: #323232;
 	line-height: 30px;
+
 }
 
-.nav ul, .nav li {
+.nav li {
 	float: left;
 }
 
 .nav li a {
-	margin-left: 65px;
+	padding: 0 35px;
 	font-family: Tahoma, Arial, sans-serif;
 	font-size: 14px;
 	color: #ffffff;
@@ -104,7 +109,7 @@ body {
 }
 
 .nav li {
-	position: relative; /* чтобы выпадающее меню позиционировалось относительно родителя */
+	position: relative; /* чтобы выпадающее меню позиционировалось относительно родителя*/ 
 	z-index: 1;
 	height: 30px;
 }
@@ -112,7 +117,6 @@ body {
 .nav2 {
 	display: none; /* скрываем выпадающе меню */
 	position: absolute; /* чтобы положение подменю не влияло на окружение и легко было позиционировать */
-	left: 50px;
 	top: 30px; /* высоту лучше не делать большей высоты пункта меню первого уровня, иначе попасть на подменю будет проблематично */
 	border: -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
 			-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
@@ -124,8 +128,7 @@ body {
 	float: none;
 	display: block;
 	background: none;
-	margin-left: 5px;
-	width: 150px;
+	width: 100px;
 }
 
 ul li:hover ul {
@@ -151,10 +154,13 @@ ul li:hover ul {
 }
 
 .empty {
-	width: 580px;
+	width: 578px;
 	float: left;
 	min-height: 545px;
 	background: #ffffff;
+	border-left: 1px solid #c7cacf;
+	border-right: 1px solid #c7cacf;
+	min-height: 0 5px;
 }
 
 .news {
@@ -170,7 +176,7 @@ ul li:hover ul {
 
 .footer {
 	background: #0c739f;
-	color: white;
+	color: #cee3ec;
 	text-align: center;
 	line-height: 40px;
 	font-family: Tahoma, Arial, sans-serif;
