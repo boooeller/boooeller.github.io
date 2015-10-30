@@ -1,0 +1,178 @@
+body {
+	background-image: url(../img/body_bg.jpg);
+	min-height: 1020px;
+}
+.wrapper {
+	width: 1000px;
+	min-height: 1000px;
+	border: -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+			box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+	border-bottom: 2px solid black;
+	margin: 0 auto;
+}
+
+.header {
+	min-height: 213px;
+	background: #ffffff;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.logo {
+	width: 250px;
+	height: 100px;
+	margin-top: 45px;
+	float: left;
+}
+
+.container {
+	width: 384px;
+	float: right;
+	margin-top: 42px;
+	margin-right: 33px;
+}
+
+.contacts {
+	width: 130px;
+	float: right;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 12px;
+	color: #128aa7;
+}
+
+.contacts p {
+	line-height: 17px;
+}
+
+.contacts p:first-child {
+	font-weight: bold;	
+}
+.contacts a {
+
+	text-decoration: none;
+}
+
+.countries {
+	width: 384px;
+	float: right;
+	margin-top: 33px;
+}
+
+.countries div {
+	width: 62px;
+	float: left;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 12px;
+	color: #128aa7;
+	text-align: center;
+}
+
+.container a {
+	color: #128aa7;
+
+}
+
+.photo {
+	min-height: 237px;
+	background-image: url(../img/photo.jpg);
+}
+
+.nav {
+	border: -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+			box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	min-height: 30px;
+	background: #323232;
+	line-height: 30px;
+}
+
+.nav ul, .nav li {
+	float: left;
+}
+
+.nav li a {
+	margin-left: 65px;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.nav li {
+	position: relative; /* чтобы выпадающее меню позиционировалось относительно родителя */
+	z-index: 1;
+	height: 30px;
+}
+
+.nav2 {
+	display: none; /* скрываем выпадающе меню */
+	position: absolute; /* чтобы положение подменю не влияло на окружение и легко было позиционировать */
+	left: 50px;
+	top: 30px; /* высоту лучше не делать большей высоты пункта меню первого уровня, иначе попасть на подменю будет проблематично */
+	border: -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+			box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	background: #323232;
+}
+
+.nav2 li a {
+	float: none;
+	display: block;
+	background: none;
+	margin-left: 5px;
+	width: 150px;
+}
+
+ul li:hover ul {
+	display: block; /* при наведении на пункт меню первого уровня, показывем подменю */
+}
+
+.main {
+	min-height: 545px;
+	font-size: 14px;
+	color: #424c43;
+	line-height: 24px;
+	font-family: Tahoma, Arial, sans-serif;
+	text-align: center;
+
+}
+
+.info {
+	width: 210px;
+	float: left;
+	min-height: 545px;
+	background: #edeef0;
+
+}
+
+.empty {
+	width: 580px;
+	float: left;
+	min-height: 545px;
+	background: #ffffff;
+}
+
+.news {
+	width: 210px;
+	float: left;
+	min-height: 545px;
+	background: #edeef0
+}
+.main h2 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.footer {
+	background: #0c739f;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 12px;
+}
