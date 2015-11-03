@@ -57,17 +57,13 @@ body {
 .contacts p:first-child {
 	font-weight: bold;	
 }
-.contacts a {
-
-	text-decoration: none;
-}
 
 .countries {
 	float: right;
 	margin-top: 33px;
 }
 
-.countries div {
+.test {
 	width: 62px;
 	float: left;
 	font-family: Tahoma, Arial, sans-serif;
@@ -78,7 +74,7 @@ body {
 
 .container a {
 	color: #128aa7;
-
+	text-decoration: none;
 }
 
 .photo {
@@ -90,14 +86,19 @@ body {
 	border: -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
 			-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
 			box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
-	min-height: 30px;
 	background: #323232;
 	line-height: 30px;
 
 }
 
+.menu1 {
+	border: 5px solod red; /*для теста задал*/
+	
+}
+
 .nav li {
 	float: left;
+	
 }
 
 .nav li a {
@@ -142,6 +143,7 @@ ul li:hover ul {
 	line-height: 24px;
 	font-family: Tahoma, Arial, sans-serif;
 	text-align: center;
+	background: #ffffff;
 
 }
 
@@ -154,13 +156,14 @@ ul li:hover ul {
 }
 
 .empty {
-	width: 578px;
+	width: 568px;
 	float: left;
 	min-height: 545px;
-	background: #ffffff;
+	
 	border-left: 1px solid #c7cacf;
 	border-right: 1px solid #c7cacf;
-	min-height: 0 5px;
+	padding: 0 5px 0 5px;
+	background: #ffffff;
 }
 
 .news {
