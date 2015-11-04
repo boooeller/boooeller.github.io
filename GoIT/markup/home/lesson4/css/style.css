@@ -4,9 +4,6 @@ body {
 	background-size: 1px;
 	background-position: top center;
 	background-color: #0C739F; 
-	
-
-	
 }
 
 .wrapper {
@@ -17,6 +14,7 @@ body {
 			box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
 	border-bottom: 2px solid black;
 	margin: 0 auto;
+	position: relative;
 }
 
 .header {
@@ -63,6 +61,7 @@ body {
 	margin-top: 33px;
 }
 
+
 .test {
 	width: 62px;
 	float: left;
@@ -74,31 +73,29 @@ body {
 
 .container a {
 	color: #128aa7;
+}
+
+.container a:hover {
 	text-decoration: none;
 }
 
 .photo {
 	height: 237px;
-	
 }
 
 .nav {
-	border: -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
-			-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
-			box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	border: -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
+			box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
 	background: #323232;
 	line-height: 30px;
-
-}
-
-.menu1 {
-	border: 5px solod red; /*для теста задал*/
-	
+	position: relative;
+	z-index: 2;
+	border-bottom: 1px solid black;
 }
 
 .nav li {
 	float: left;
-	
 }
 
 .nav li a {
@@ -118,18 +115,21 @@ body {
 .nav2 {
 	display: none; /* скрываем выпадающе меню */
 	position: absolute; /* чтобы положение подменю не влияло на окружение и легко было позиционировать */
-	top: 30px; /* высоту лучше не делать большей высоты пункта меню первого уровня, иначе попасть на подменю будет проблематично */
+	top: 100%; /* высоту лучше не делать большей высоты пункта меню первого уровня, иначе попасть на подменю будет проблематично */
+	left: 25px;
 	border: -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
 			-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
 			box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
 	background: #323232;
+	border-top: 1px solid black;
 }
 
 .nav2 li a {
 	float: none;
 	display: block;
 	background: none;
-	width: 100px;
+	width: 95px;
+	padding-left: 10px;
 }
 
 ul li:hover ul {
@@ -142,39 +142,38 @@ ul li:hover ul {
 	color: #424c43;
 	line-height: 24px;
 	font-family: Tahoma, Arial, sans-serif;
-	text-align: center;
 	background: #ffffff;
-
 }
 
 .info {
-	width: 210px;
+	width: 170px;
 	float: left;
 	min-height: 545px;
 	background: #edeef0;
-
+	padding: 5px 20px;
 }
 
 .empty {
-	width: 568px;
+	width: 578px;
 	float: left;
 	min-height: 545px;
-	
 	border-left: 1px solid #c7cacf;
 	border-right: 1px solid #c7cacf;
-	padding: 0 5px 0 5px;
 	background: #ffffff;
 }
 
 .news {
-	width: 210px;
+	width: 170px;
 	float: left;
 	min-height: 545px;
-	background: #edeef0
+	background: #edeef0;
+	padding: 5px 20px;
 }
-.main h2 {
+
+.test2 {
 	font-size: 18px;
 	font-weight: bold;
+	text-align: center;
 }
 
 .footer {
