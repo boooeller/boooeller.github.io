@@ -1,0 +1,254 @@
+/*1. Как сделать with не жирным*/
+/*2. Подчкркивание в правом меню*/
+@font-face {
+    font-family: HelveticaNeue; /* Имя шрифта */
+    src: url(../fonts/HelveticaNeue.ttf); /* Путь к файлу со шрифтом */
+   }
+
+body {
+	background-image: url(../img/back2.jpg);
+	background-size: cover;
+	font-family: HelveticaNeue;
+
+	/*width: 1215px;*/
+	/*height: 1064px;*/
+}
+
+.nav {
+	/*border: 1px solid black;*/
+	background-image: url(../img/nav.jpg);
+	height: 36px;
+}
+
+.nav li, .nav p, .nav img {
+	float: right;
+}
+
+.nav a {
+	line-height: 35px;
+	padding: 10px;
+	text-decoration: none; 
+}
+.nav li a {
+	color: #60b5ed;
+	
+}
+
+.nav li a:hover {
+	background-color: #4eabda;
+	color: #ffffff;
+}
+
+.nav p a {
+	color: #ffffff;
+}
+
+.nav p a:hover {
+	background: linear-gradient(to top, #2e7ac4, #4eacda);
+	
+}
+
+.nav img {
+	margin-left: 20px;
+}
+
+.nav p:first-child {
+	margin-right: 20px;
+}
+
+.pic img:first-child {
+	margin-top: 7px;
+}
+
+.nav span {
+	text-decoration: underline;
+}
+
+.a1 a {
+	background: linear-gradient(to top, #2e7ac4, #4eacda);
+}
+
+.wrapper {
+	width: 560px;
+	height: 614px;
+	background-color: rgba(0, 0, 0, 0.6);
+	margin: 212px auto;
+}
+
+.text {
+	color: #b2bd9f;
+	font-size: 24px;
+	text-align: center;
+	line-height: 65px;
+	height: 64px;
+	border-bottom: 2px solid #b9c1ac;
+}
+h1 {
+	font-size: 24px;
+}
+
+.facebook {
+	width: 277px;
+	height: 36px;
+	border-top: 1px solid #7a88b5;
+	background: linear-gradient(to top, #304272, #3d5698);
+	border-radius: 5px;
+	margin: 35px auto 32px auto;
+}
+
+.facebook a {
+	text-decoration: none;
+	line-height: 35px;
+	color: #fff;
+	padding: 0 13px;
+}
+
+.fb {
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+.facebook span:after {
+	content: url(../img/str.png);
+	padding: 0 25px;
+
+}
+
+.text2 {
+	margin: 0 auto;	
+	text-align: center;
+	position: relative;
+	color: #999;
+}
+
+h3 {
+	font-size: 14px;
+}
+
+.text2 h3:before {
+	content: "";
+	width: 124px;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #000;
+	position: absolute;
+	top: 7px;
+	left: 140px;
+}
+
+.text2 h3:after {
+	content: "";
+	width: 124px;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #000;
+	position: absolute;
+	top: 7px;
+	right: 140px;
+}
+
+.form {
+	margin: 26px auto 18px auto;
+	width: 277px;
+
+}
+
+input {
+	width: 258px;
+	height: 35px;
+	background: #0f0f0f;
+	border: none;
+	border-bottom: 1px solid #484848;
+	color: #fff;
+	padding-left: 17px;
+}
+
+.input {
+	margin-bottom: 15px;
+}
+
+.input:focus {
+	background: #1b5288;
+	border: -webkit-box-shadow: 0px 0px 5px 4px rgba(71,119,150,0.48);
+-moz-box-shadow: 0px 0px 5px 4px rgba(71,119,150,0.48);
+box-shadow: 0px 0px 5px 4px rgba(71,119,150,0.48);
+
+/*Стилизация placeholder-a*/
+}
+
+.input::-webkit-input-placeholder {
+	color:#fff;
+	font-family: HelveticaNeue;
+}
+
+.input::-webkit-input-placeholder {
+	text-indent: 0px;   
+	transition: text-indent 1s ease;
+}
+
+.input::-moz-placeholder {
+	text-indent: 0px;   
+	transition: text-indent 1s ease;
+}
+
+.input:-moz-placeholder {
+	text-indent: 0px;   
+	transition: text-indent 1s ease;
+}
+
+.input:-ms-input-placeholder {
+	text-indent: 0px;   
+	transition: text-indent 1s ease;
+}
+
+.input:focus::-webkit-input-placeholder {
+	text-indent: 500px; transition: text-indent 1s ease;
+}
+
+.input:focus::-moz-placeholder {
+	text-indent: 500px;
+	transition: text-indent 1s ease;
+}
+
+.input:focus:-moz-placeholder {
+	text-indent: 500px; 
+	transition: text-indent 1s ease;
+}
+
+.input:focus:-ms-input-placeholder {
+      	text-indent: 500px; 
+      	transition: text-indent 1s ease;
+}
+
+input[type="checkbox"] {
+	height: 10px;
+	width: 10px;
+	margin: 0 0 15px 0;
+
+}
+
+label {
+	color: #929089;
+	font-size: 14px;
+	font-family: HelveticaNeue;
+}
+
+input[type="button"] {
+	width: 150px;
+	height: 35px;
+	background: linear-gradient(to top, #2e7ac4, #4faddb);
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	margin-left: 64px;
+	font-family: HelveticaNeue;
+	font-size: 14px;
+	padding: 0;
+	cursor: pointer;
+}
+
+.btext {
+	color: #ccc;
+	text-align: center;
+	width: 320px;
+	margin: 0 auto;
+	font-size: 11px;
+}

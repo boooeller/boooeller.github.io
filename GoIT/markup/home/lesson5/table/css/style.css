@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+td {
+	border: 8px solid black;
+	width: 60px;
+	/*height: 60px;*/
+	text-align: center;
+	/*background: #000;*/
+}
+
+table {
+	border-collapse: collapse; 
+	border: 10px solid white;
+	margin: 100px auto;
+}
+
+.row1, .row4, .row5 {
+	
+	height: 60px;
+}
+
+.row2, .row3 {
+	
+	height: 130px;
+}
+
+.row6, .row7 {
+		
+	height: 30px;
+}
+
+.yellow {
+	background: #fff664;
+}
+
+.red {
+	background: #ff5541;
+}
+
+.grey {
+	background: #222325;
+}
+
+.sz {
+	width: 100px;
+}
+
+.blue {
+	background: #064581;
+}
