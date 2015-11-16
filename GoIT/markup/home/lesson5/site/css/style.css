@@ -8,10 +8,16 @@
 body {
 	background-image: url(../img/back2.jpg);
 	background-size: cover;
+	background-attachment: fixed;
 	font-family: HelveticaNeue;
 
 	/*width: 1215px;*/
 	/*height: 1064px;*/
+}
+
+.test3 {
+	width: 1000px;
+	margin: 0 auto;
 }
 
 .nav {
