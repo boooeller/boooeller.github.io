@@ -24,17 +24,17 @@ body {
 	float: right;
 }
 
-.nav a {
+.test2 a {
 	line-height: 35px;
 	padding: 10px;
 	text-decoration: none; 
 }
-.nav li a {
+.test2 li a {
 	color: #60b5ed;
 	
 }
 
-.nav li a:hover {
+.test2 li a:hover {
 	background-color: #4eabda;
 	color: #ffffff;
 }
@@ -48,12 +48,58 @@ body {
 	
 }
 
+.pic {
+	margin-left: 15px;
+	float: right;
+}
+
+.pic p {
+	background-image: url(../img/flag.png);
+	background-repeat: no-repeat;
+	background-position: 5px 6px;
+	line-height: 35px;
+	padding-left: 35px;
+	color: #fff;
+	position: relative;
+}
+
+.pic p:before {
+	content: url(../img/line.png);
+	position: absolute;
+	left: -2px;
+}
+
+.test {
+	margin-right: 15px;
+	background: linear-gradient(to top, #2e7ac4, #4eacda);
+	display: block;
+	float: right;
+	padding: 0 5px;
+	
+}
+
+.test a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.test a:hover {
+	text-decoration: underline;
+}
+
+.test li {
+	line-height: 35px;
+	color: #fff;
+	padding: 0 2px;
+}
+
 .nav img {
 	margin-left: 20px;
 }
 
 .nav p:first-child {
 	margin-right: 20px;
+	
 }
 
 .pic img:first-child {
@@ -94,6 +140,7 @@ h1 {
 	background: linear-gradient(to top, #304272, #3d5698);
 	border-radius: 5px;
 	margin: 35px auto 32px auto;
+	position: relative;
 }
 
 .facebook a {
@@ -104,8 +151,15 @@ h1 {
 }
 
 .fb {
-	padding-left: 10px;
+	margin-left: 50px;
 	font-weight: bold;
+}
+
+.fb:before {
+	content: url(../img/facebook.png);
+	position: absolute;
+	left: 0;
+
 }
 
 .facebook span:after {
