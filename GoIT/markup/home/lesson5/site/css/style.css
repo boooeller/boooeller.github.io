@@ -8,17 +8,12 @@
 body {
 	background-image: url(../img/back2.jpg);
 	background-size: cover;
+	font-family: HelveticaNeue;
 	background-position: center;
 	background-attachment: fixed;
-	font-family: HelveticaNeue;
 
 	/*width: 1215px;*/
 	/*height: 1064px;*/
-}
-
-.test3 {
-	width: 1000px;
-	margin: 0 auto;
 }
 
 .nav {
