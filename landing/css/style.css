@@ -551,3 +551,28 @@ form:after {
 	font-size: 35px;
 
 }
+
+.adv2 {
+	/*min-height: 87px;*/
+	background-image: url(../img/pattern-blue.jpg);
+	/*background-image: url(../img/logo_2.png);*/
+	/*white-space: nowrap;*/
+	text-align: center;
+	/*line-height: 125px;*/
+	font-family: trebuchet ms,helvetica,sans-serif;	
+	font-size: 30px;
+	color: #fff;
+	/*margin-top: -1px;*/
+	margin: 0 0 20px 0;
+	padding: 30px 200px 30px 300px;
+	position: relative;
+
+}
+
+.adv2 p:before {
+	content: url(../img/elka-ico.png);
+	position: absolute;
+	left: 245px;
+	top: 40px;
+}
+
