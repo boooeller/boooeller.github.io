@@ -19,10 +19,9 @@
 				<form action="#">
 					<input type="text" name="name" class="input1" id="" placeholder="логин">
 					<input type="password" name="password" class="input" id="" placeholder="пароль">
-					<button>вход</button>
-					<span class="line">|</span>
-					<button>регистрация</button>
-					<button class="forgot">забыли пароль?</button>
+					<button class="enter">вход</button>
+					<a href="#" class="reg">регистрация</a>
+					<a href="#" class="forgot">забыли пароль?</a>
 				</form>
 				<div class="after_login">
 					<a class="first_link" href="#"></a>
@@ -34,7 +33,7 @@
 				<a class="small_logo" href="#"><img src="img/small_logo.png" alt=""></a>
 			</div>	
 		</header>
-		<nav>
+		<nav class="clearfix">
 			<ul>
 				<li><a href="#">о компании</a></li>
 				<li><a href="#">оплата</a></li>
@@ -42,17 +41,26 @@
 				<li><a href="#">статьи</a></li>
 				<li><a href="#">контакты</a></li>
 			</ul>
-			<p class="prod">
-				товаров:
-				<span class="price">0</span>
-			</p>
-			<p class="suma">
-				на сумму:
-				<span class="price">0,00 грн.</span>
-			</p>
+				<p class="prod">
+					товаров:
+					<span class="price">0</span>
+				
+				
+					на сумму:
+					<span class="price">0,00 грн.</span>
+				</p>
 		</nav>
 		<div class="filter">
-			<div class="car_search"></div>
+			<div class="car_search">
+				<!-- <h5>Поиск по автомобилю</h5> -->
+				<!-- <p class="disk">Диски:</p> -->
+				
+				<!-- <p class="tire"></p> -->
+				<!-- <select>
+				  <option>Пункт 1</option>
+				  <option>Пункт 2</option>
+				</select> -->
+			</div>
 			<div class="tire_search"></div>
 			<div class="disk_search"></div>
 		</div>
@@ -165,21 +173,42 @@
 				<div class="brand_rires">
 					<p>ШИНЫ</p>
 				</div>
-				<ul class="prod_list">
-					<li><a href="#">Бренд 1</a></li>
-					<li><a href="#">Бренд 2</a></li>
-					<li><a href="#">Бренд 3</a></li>
-					
-				</ul>
+				<div class="checkbox">
+					<ul>
+						<li>
+							<input id="chb1" type="checkbox" name="checkbox" value="chb1">
+							<label for="chb1">Бренд 1</label>
+						</li>
+						<li>	
+							<input id="chb2" type="checkbox" name="checkbox" value="chb2">
+							<label for="chb2">Бренд 2</label>
+						</li>	
+						<li>
+							<input id="chb3" type="checkbox" name="checkbox" value="chb3">
+							<label for="chb3">Бренд 3</label>
+						</li>	
+					</ul>
+				</div>
+	
 				<div class="brand_discs">
 					<p>ДИСКИ</p>
 				</div>
-				<ul class="prod_list">
-					<li><a href="#">Бренд 1</a></li>
-					<li><a href="#">Бренд 2</a></li>
-					<li><a href="#">Бренд 3</a></li>
-					
-				</ul>
+				<div class="checkbox">
+					<ul>
+						<li>
+							<input id="chb1" type="checkbox" name="checkbox" value="chb1">
+							<label for="chb1">Бренд 1</label>
+						</li>
+						<li>	
+							<input id="chb2" type="checkbox" name="checkbox" value="chb2">
+							<label for="chb2">Бренд 2</label>
+						</li>	
+						<li>
+							<input id="chb3" type="checkbox" name="checkbox" value="chb3">
+							<label for="chb3">Бренд 3</label>
+						</li>	
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="logos">
@@ -210,15 +239,15 @@
 				</li>
 			</ul>
 		</div>
-		<div class="footer">
+		<footer>
 			<ul>
 				<li><a class="active" href="#">О компании</a></li>
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Статьи</a></li>
+				<li><a href="#" class="del">Доставка</a></li>
+				<li><a href="#" class="art">Статьи</a></li>
 				<li><a href="#">Контакты</a></li>
 			</ul>
 			<p>Создание сайта © Global Vision</p>	
-		</div>
+		</footer>
 	</div>
 </body>
 </html>
