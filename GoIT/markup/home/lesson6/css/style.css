@@ -403,6 +403,7 @@ nav li a:hover {
 
 .products_catalog p, .tires p, .discs p, .bolts p, .brand p, .brand_rires p, .brand_discs p {
 	margin-left: 30px;
+	/*font-family: lsansuni;*/
 }
 
 .products_catalog:before, .brand:before {
@@ -471,18 +472,31 @@ nav li a:hover {
 
 .checkbox li {
 	margin: 5px 0 10px 5px;
+	font-family: lsansuni;
 	font-size: 13px;
 	color: #465961;
 }
 
-.checkbox input {
-
-}
-
 .checkbox label {
 	margin: 0 0 0 5px;
+}
 
+input[type="checkbox"] {
+    display:none;
+}
 
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin: 2px 4px 0 0;
+    vertical-align:middle;
+    background:url(../img/checkbox.png) left top no-repeat;
+    cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    background:url(../img/checkbox_test.png) left top no-repeat;
 }
 
 .brand, .brand_rires, .brand_discs {
@@ -533,13 +547,13 @@ nav li a:hover {
 .wheel_container {
 	width: 140px;
 	height: 130px;
-	border: 1px solid #a4aeb1;
-	border-radius: 10px;
-	background: #fff url("../img/wheel1.jpg") no-repeat 50% 50%;
-	cursor: pointer;
+	/*border: 1px solid #a4aeb1;*/
+	/*border-radius: 10px;*/
+	/*background: #fff url("../img/wheel1.jpg") no-repeat 50% 50%;*/
+	/*cursor: pointer;*/
 }
 
-.wheel2_container  {
+/*.wheel2_container  {
 	background: #fff url("../img/wheel2.jpg") no-repeat 50% 50%;
 }
 
@@ -569,7 +583,7 @@ nav li a:hover {
 
 .wheel9_container  {
 	background: #fff url("../img/wheel9.jpg") no-repeat 50% 50%;
-}
+}*/
 
 .wheel_1 a {
 	text-decoration: none;
@@ -666,3 +680,4 @@ footer .active:after, .del:after, .art:after {
 	font-weight: bold;
 	/*font-size: 12px;*/
 }
+
