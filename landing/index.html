@@ -4,8 +4,16 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/script.js"></script>
+	
+	<script src="js/jquery-1.12.2.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script type="text/javascript">
+$(document).ready(function(){
+      $('.slider').slick();
+    });
+	</script>
 </head>
 <body>
 	<div class="wrapper">		
@@ -17,7 +25,7 @@
 				<p class="number">(067) 233-78-63</p>
 			</div>
 			<div class="logo"></div>
-			<button>
+			<button class="button">
 				<a href="#link">ХОЧУ КУПИТЬ!</a>
 			</button>
 		</header>
@@ -162,28 +170,54 @@
 					</div>
 				</div>
 				<div class="cover">	
-					<div class="box box1">
+					<div class="box box3">
 						<p>Низкая стоимость подгузника, по сравнению с аналогичными торговыми марками такого же уровня - стоимость 1шт подгузника от 2 грн 80 коп.</p>
 					</div>
 				</div>
 				<h2>Что особенного в подгузниках Dada</h2>
-				<div class="cover">	
-					<div class="box"></div>
-					
-						
-					
+				<div class="cover" id="test1">	
+					<div class="box test5"></div>
+					<div id="test2">
+						<img src="img/fit-newborn_hover.png" alt="">
+					</div>	
 				</div>	
-				<div class="cover">
-					<div class="box"></div>
-				</div>	
-				<div class="cover">
-					<div class="box"></div>
+				<div class="cover" id="test1">	
+					<div class="box test5"></div>
+					<div id="test2">
+						<img src="img/fit-newborn_hover.png" alt="">
+					</div>	
+				</div>
+				<div class="cover" id="test1">	
+					<div class="box test5"></div>
+					<div id="test2">
+						<img src="img/fit-newborn_hover.png" alt="">
+					</div>	
 				</div>	
 			</div>
 		</div> 
 		<div class="feedback">
 			<h2>Отзывы о подгузниках Dada</h2>
-			<div class="slider"></div>
+			<div class="slider">
+				<div>
+					<h3>Доступная цена + отличное качество </h3>
+					<p><span class="bol">Достоинства:</span> тонкие, дышат, хорошо впитывают, не вызывают аллергию, очень доступная цена</p>
+					<p><span class="bol">Недостатки:</span> не всегда есть в продаже</p>
+					<p>предлагаю тут сделать ссылку на полный отзыв на сайте отзовик</p>
+				</div>
+				<div>
+					<h3>Идеальный вариант)))  </h3>
+					<p><span class="bol">Достоинства:</span> дешево, качественоно</p>
+					<p><span class="bol">Недостатки:</span> не везде можно купить</p>
+					<p>предлагаю тут сделать ссылку на полный отзыв на сайте отзовик</p>
+				</div>
+				<div>
+					<h3>Хорошие, но мало где продаются.</h3>
+					<p><span class="bol">Достоинства:</span> качество, цена</p>
+					<p><span class="bol">Недостатки:</span> мало где продаются</p>
+					<p>предлагаю тут сделать ссылку на полный отзыв на сайте отзовик</p>
+				</div>
+
+			</div>
 		</div>
 		<div class="footer">
 			<div class="map">
