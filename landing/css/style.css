@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+body {
+	/*background-color: #6BD4BF;*/
+}
+
 .wrapper {
 	/*height: 5000px;*/
 	font-family: trebuchet ms,helvetica,sans-serif;
@@ -81,6 +85,7 @@ header {
 .button a {
 	color: #fff;
 	text-decoration: none;
+	padding: 10px 50px;
 }
 
 .adv {
@@ -203,6 +208,7 @@ header {
 .buy a {
 	 color: #ffffff;
 	 text-decoration: none;
+	 padding: 5px 45px;
 }
 
 .first2 .pic2 {
@@ -373,7 +379,7 @@ select {
 select > option {
     background-color: transparent;
     border: 0;
-    background-image: url(images/option.png);
+    /*background-image: url(images/option.png);*/
     padding-right: 15px;
     height: 31px;
     width: 220px;
@@ -396,6 +402,7 @@ input[type="button"] {
 	font-size: 24px;
 	/*padding: 0;*/
 	cursor: pointer;
+	outline: none;
 }
 
 input[type="button"]:hover {
@@ -430,6 +437,7 @@ form:after {
 	background: url("..//img/border-pattern.jpg") repeat 0% 0%;
 	padding: 3px;
 	margin: 0 0 10px 0;
+	/*position: relative;*/
 }
 
 .box {
@@ -445,13 +453,14 @@ form:after {
 .box1 {
 	background-image: url(../img/pic1.jpg);
 	background-repeat: no-repeat;
-	background-position: 4% 50%; 
+	background-position: 4% 50%;
+	/*padding-right: 50px; */
 }
 
 .box1 p {
 	/*text-align: justify;*/
-	margin: 40px 0 0 400px; 
-	width: 300px;
+	margin: 70px 0 0 220px; 
+	/*width: 400px;*/
 }
 
 .box2 {
@@ -461,20 +470,21 @@ form:after {
 }
 
 .box2 p {
-	width: 300px;
-	margin: 40px 0 0 20px;
+	/*width: 400px;*/
+	margin: 70px 0 0 20px;
 } 
 
 .box3 {
 	background-image: url(../img/deshevues-ms.jpg);
 	background-repeat: no-repeat;
-	background-position: 4% 50%; 
+	background-position: 4% 50%;
+	padding-right: 20px; 
 }
 
 .box3 p {
 	/*text-align: justify;*/
-	margin: 40px 0 0 400px; 
-	width: 300px;
+	margin: 40px 0 0 220px; 
+	/*width: 400px;*/
 }
 
 .feedback {
@@ -502,52 +512,6 @@ form:after {
 	background-color: #fff;
 	position: relative;
 }
-
-/*.slider:before {
-	content: '';
-	width: 42px;
-	height: 42px;
-	background-image: url(../img/slider_arrows.png); 
-	/*background-position: 0px 0px;
-	position: absolute;
-	top: 70px;
-	left: -20px;
-}
-
-.slider:hover:before {
-	content: '';
-	width: 42px;
-	height: 42px;
-	background-image: url(../img/slider_arrows.png); 
-	background-position: 0px 42px;
-	position: absolute;
-	top: 70px;
-	left: -20px;
-	cursor: pointer;
-}*/
-
-/*.slider:after {
-	content: '';
-	width: 42px;
-	height: 42px;
-	background-image: url(../img/slider_arrows.png); 
-	background-position: 42px 0px;
-	position: absolute;
-	top: 70px;
-	right: -20px;
-}
-
-.slider:hover:after {
-	content: '';
-	width: 42px;
-	height: 42px;
-	background-image: url(../img/slider_arrows.png); 
-	background-position: 42px 42px;
-	position: absolute;
-	top: 70px;
-	right: -20px;
-	cursor: pointer;
-}*/
 
 .footer {
 	height: 300px;
@@ -593,6 +557,13 @@ form:after {
 	top: 40px;
 }
 
+.bor {
+	/*border: 1px solid orange;*/
+	width: 744px;
+	/*height: 300px;*/
+	background-color: #fff;
+}
+
 #test2 {
 	/*width: 300px;*/
 	/*height: 100px;*/
@@ -600,18 +571,36 @@ form:after {
 	display: none;
 	/*visibility: hidden;
 	transition: all 1s;*/
+	/*opacity:0;*/
 
-	
+}
+
+.img4 {
+	/*height: 344px;*/
+	background: #fff url(../img/fit-mini.png) no-repeat;
+	float: right;
+	/*border: 1px solid red;*/
+	width: 310px;
+	height: 200px;
+
+}
+
+.text3 {
+	float: left;
+	/*border: 1px solid green;*/
+	margin: 70px 0 0 20px;
+	width: 400px;
 	
 }
+
+.text3 p{
+	font-size: 16px !important;
+}
+
 
 #test1:hover #test2 {
 	/*border: 1px solid green;*/
 	display: block;
-
-	/*margin-bottom: 50px;*/
-	/*transition: 3s;*/
-	
 }
 
 .slick-next {
@@ -671,8 +660,19 @@ form:after {
 	margin: 10px 0;
 }
 
-.cover .test5 {
-	/*height: 344px;*/
-	background: #fff url(../img/fit-newborn_1.png) no-repeat;
+.slider a {
+	color: #000;
+	outline: none;	
 }
 
+.slider a:hover {
+	color: #F74438;
+}
+
+.rew {
+	line-height: 25px;	
+}
+
+.slick-slide, .button, .form {
+	outline: none;
+}
