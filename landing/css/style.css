@@ -564,15 +564,21 @@ form:after {
 	background-color: #fff;
 }
 
-#test2 {
-	/*width: 300px;*/
-	/*height: 100px;*/
-	/*border: 1px solid red;*/
-	display: none;
-	/*visibility: hidden;
-	transition: all 1s;*/
-	/*opacity:0;*/
+.bor img {
+	/*display: none;*/
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s, visibility .5s;
 
+	
+
+}
+
+#test1:hover .bor img {
+	/*border: 1px solid green;*/
+	/*display: block;*/
+	opacity: 1;
+  visibility: visible;
 }
 
 .img4 {
@@ -598,10 +604,7 @@ form:after {
 }
 
 
-#test1:hover #test2 {
-	/*border: 1px solid green;*/
-	display: block;
-}
+
 
 .slick-next {
 	width: 42px !important;
@@ -675,4 +678,29 @@ form:after {
 
 .slick-slide, .button, .form {
 	outline: none;
+}
+
+.test_container {
+	height: 510px;
+	width: 744px;
+	background-color: #fff;
+}
+
+.big_block1, .big_block2, .big_block3, .big_block4 {
+	width: 700px;
+	height: 350px;
+	border: 1px solid red;
+}
+
+.big_block2, .big_block3, .big_block4 {
+	display: none;
+}
+
+.small_block1, .small_block2, .small_block3, .small_block4 {
+	width: 150px;
+	height: 150px;
+	border: 1px solid green;
+	float: left;
+	margin: 5px 10px 0 0;
+
 }
