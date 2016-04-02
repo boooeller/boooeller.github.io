@@ -491,7 +491,7 @@ form:after {
 	height: 325px;
 	background-image: url(../img/dots.jpg);
 	padding-top: 20px;
-	margin: 150px 0 0 0;
+	margin: 250px 0 0 0;
 	position: relative;
 }
 
@@ -565,10 +565,10 @@ form:after {
 }
 
 .bor img {
-	/*display: none;*/
-  opacity: 0;
+	display: none;
+/*  opacity: 0;
   visibility: hidden;
-  transition: opacity .5s, visibility .5s;
+  transition: opacity .5s, visibility .5s;*/
 
 	
 
@@ -576,9 +576,9 @@ form:after {
 
 #test1:hover .bor img {
 	/*border: 1px solid green;*/
-	/*display: block;*/
-	opacity: 1;
-  visibility: visible;
+	display: block;
+/*	opacity: 1;
+  visibility: visible;*/
 }
 
 .img4 {
@@ -703,4 +703,9 @@ form:after {
 	float: left;
 	margin: 5px 10px 0 0;
 
+}
+
+.test_container a {
+	padding: 50px;
+	display: block;
 }
