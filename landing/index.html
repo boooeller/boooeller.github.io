@@ -8,30 +8,20 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
 	<script src="js/jquery-1.12.2.min.js"></script>
+	<script src="js/slick.min_test.js"></script>
 	<script src="js/slick.min.js"></script>
-	<script src="js/anchor.js"></script>	
+	
+	<script src="js/anchor.js"></script>
+	
 	<script type="text/javascript">
 $(document).ready(function(){
-      $('.slider').slick();
-    });
+      $('.slider').slick({
+    autoplay: true
+  	});
+   });
 	</script>
-<script type="text/javascript">
-$('.small_block2').slick({
-slidesToShow: 1,
-slidesToScroll: 1,
-arrows: false,
-fade: true,
-asNavFor: '.big_block2'
-});
-$('.big_block2').slick({
-slidesToShow: 3,
-slidesToScroll: 1,
-asNavFor: '.small_block2',
-dots: true,
-centerMode: true,
-focusOnSelect: true
-});
-	</script>
+
+
 </head>
 <body>
 	<div class="wrapper">		
@@ -111,6 +101,7 @@ focusOnSelect: true
 				</div>		
 			</div>	
 		</div>
+
 		<div class="container2">
 			<div class="adv2">
 				<!-- <div class="slogan_container">	 -->
@@ -146,8 +137,11 @@ focusOnSelect: true
 				</div>
 			</div>
 		</div>
+		<!-- <div class="top"><a href="#top"><img src="img/arrow_top.png"></a></div>
+		<a href="#top"><img src="images/sample.gif" width="50" 
+  height="50" alt="Пример"></a> -->
 		<div class="form" id="link">
-			<form action="">
+			<form action="handler.php" method="post" id="reply">
 				<h2>ЗАПОЛНИТЕ ЗАЯВКУ,</h2>
 				<p>и мы свяжемся с Вами в ближайшее время</p>
 				<input type="text" name="name" required class="input" id="" placeholder="Ваше имя*">
@@ -204,39 +198,64 @@ focusOnSelect: true
 					</div>	
 				</div>	
 				<div class="cover">	
-					<div class="test_container">
-						<div class="big_block1">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione illo, reiciendis perferendis ipsum possimus assumenda modi culpa rerum voluptas maxime mollitia delectus sapiente a similique! Dicta vel accusamus consequuntur laboriosam!
+					<div class="white_container">
+					<div class="slider_test">
+						<div class="slide_1">
+							<h3>Dada Premium Comfort Fit</h3>
+							<p class="label">Newborn</p>
+							<p class="qry">28 штук / 2-5 кг</p>
+							<p class="slide_text">Подгузники Dada Premium Comfort Fit Newborn предназначены для детей весом 2-5 кг. Дышащая подложка, мягкий и очень емкий вкладыш обеспечат комфорт Вашему ребенку. Подгузники имеют внутренний паз на пупок и идентификатор влажности. Благодаря чертежам, которые размывают под действием влаги, мама имеет информацию о том, что пеленки - это полный и его необходимо заменить. Анатомическая форма вклада поглощающего обеспечивает еще лучшее прилегание к телу малыша. Широкие липучки позволяют легко менять подгузники, а гибкие шторки не ограничивают движений ребенка! Применяемые в пеленках более мягкие оборки защищают нежную кожу ребенка между ножками. Подгузники Newborn имеют положительное заключение Института Матери и Ребенка.</p>
+							<img src="img/big_pic1.png" alt="Slider1_pic" />
 						</div>
-						<div class="big_block2"></div>
-						<div class="big_block3"></div>
-						<div class="big_block4"></div>
-						
-						<ul>
-							<li class="small_block1"><a href="#"></a></li>
-							<li class="small_block2"><a href="#"></a></li>
-							<li class="small_block3"><a href="#"></a></li>
-							<li class="small_block4"><a href="#"></a></li>
-						</ul>
-						<!-- <div class="small_block1">
 							
+						<div class="img">
+							<h3>Dada Premium Comfort Fit</h3>
+							<p class="label">Mini</p>
+							<p class="qry">78 штук / 3-6 кг</p>
+							<p class="slide_text">Подгузники Dada Premium Comfort Fit Mini предназначены для детей весом 3-6 кг. Дышащая подложка и мягкий и очень емкий вклад обеспечат комфорт Вашему ребенку. Анатомическая форма вклада поглощающего обеспечивает еще лучшее прилегание к телу малыша. Широкие липучки позволяют легко менять подгузники, а гибкие шторки не ограничивают движений ребенка! Применяемые в пеленках более мягкие оборки защищают нежную кожу ребенка между ножками. Подгузники Mini имеют положительное заключение Института Матери и Ребенка.</p>
+							<img src="img/big_pic2.png" alt="Slider1_pic" />
 						</div>
-						<div class="small_block2">
-							
-						</div>
-						<div class="small_block3">
-							
-						</div>
-						<div class="small_block4">
-							>
-						</div> -->
+						 <div class="img">
+							<h3>Dada Premium Comfort Fit</h3>
 
+						 	<p class="label">Midi</p>
+							<p class="qry">64 штук / 4-9 кг</p>
+							<p class="slide_text">Подгузники Dada Premium Comfort Fit Midi предназначены для детей весом 4-9 кг. Новые подгузники тоньше, более гибкие и легче, но так же впитывающие благодаря использованию технологии Super Core, который обеспечит Вашему Ребенку еще больший комфорт и свободу движений во время познавать мир! Подгузники остаются сухими до 12 часов. Дышащая подложка, внутренний слой с экстрактом алоэ и мягкий и очень емкий вклад обеспечат комфорт Вашему ребенку. Анатомическая форма вклада поглощающего обеспечивает еще лучшее прилегание к телу малыша. Широкие липучки позволяют легко менять подгузники, а гибкие шторки не ограничивают движений ребенка! Применяемые в пеленках более мягкие оборки защищают нежную кожу ребенка между ножками. Подгузники Midi имеют положительное заключение Института Матери и Ребенка.</p>
+							<img src="img/big_pic3.png" alt="Slider1_pic" />
+						</div>
+						<div class="img">
+							<h3>Dada Premium Comfort Fit</h3>
 
-					</div>
+						<p class="label">Maxi</p>
+							<p class="qry">54 штуки / 7-18 кг</p>
+							<p class="slide_text">Подгузники Dada Premium Comfort Fit Maxi предназначены для детей весом 7-18 кг. Новые подгузники тоньше, более гибкие и легче, но так же впитывающие благодаря использованию технологии Super Core, который обеспечит Вашему Ребенку еще больший комфорт и свободу движений во время познавать мир! Подгузники остаются сухими до 12 часов. Дышащая powłoczka, внутренний слой с экстрактом алоэ и мягкий и очень емкий вклад обеспечат комфорт Вашему ребенку. Анатомическая форма вклада поглощающего обеспечивает еще лучшее прилегание к телу малыша. Широкие липучки позволяют легко менять подгузники, а гибкие шторки не ограничивают движений ребенка! Применяемые в пеленках более мягкие оборки защищают нежную кожу ребенка между ножками. Подгузники Maxi имеют положительное заключение Института Матери и Ребенка.</p>
+							<img src="img/big_pic4.png" alt="Slider1_pic" />
+						</div>
+      				</div>
+   				 	</div>
+				</div>
 						
 				</div>
-				<div class="cover">	
-					<div class="box"></div>
+					<div class="cover cover_test">	
+						<div class="white_container2 clearfix">
+							<h2>Награды подгузников Dada</h2>
+							<div class="award1">
+								<img src="img/Dobra_Marka_dada.png" alt="">
+								<img class="img_border" src="img/superprodukt md 15_red.jpg" alt="">
+								<img src="img/super_produkt.png" alt="">
+								<!-- <img src="img/hit_1.png" alt=""> -->
+								<img src="img/hit_2.png" alt="">
+								<img src="img/logotyp 2014.png" alt="">
+								<img src="img/ulubione-produkty-twojego-maluszka-2013.png" alt="">
+								<img src="img/miesiecznik_1.png" alt="">
+								<img src="img/miesiecznik_2.png" alt="">
+
+								<img src="img/najlepszy.png" alt="">
+								<img src="img/instytut-matki-i-dziecka-pozytywna-opinia.png" alt="">
+
+							</div>
+
+						</div>
 					
 					</div>	
 				</div>	
@@ -279,6 +298,17 @@ focusOnSelect: true
 				<p>ул. Бережанская 12Б</p>
 			</div>
 		</div>
-	</div>	
+	</div>
+
+
+	<script type="text/javascript">
+$(document).ready(function(){
+  $('.slider_test').slick({
+    dots: true,
+	autoplay: true
+  });
+});
+    </script>
+
 </body>
 </html>
