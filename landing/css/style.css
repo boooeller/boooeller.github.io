@@ -8,7 +8,7 @@ body {
 }
 
 .wrapper {
-	/*height: 4500px;*/
+	/*height: 5000px;*/
 	font-family: trebuchet ms,helvetica,sans-serif;
 }
 
@@ -198,7 +198,7 @@ header {
     color: #ffffff;
     background-color: #F94793;
     border: none;
-    margin: 30px auto;
+    margin: 0 auto;
     /*padding: 5px 0;*/
     text-align: center;
     cursor: pointer;
@@ -488,11 +488,11 @@ form:after {
 }
 
 .feedback {
-	/*height: 325px;*/
+	height: 325px;
 	background-image: url(../img/dots.jpg);
-	padding: 20px;
-	margin: 600px 0 0 0;
-	/*positixon: relative;*/
+	padding-top: 20px;
+	margin: 250px 0 0 0;
+	position: relative;
 }
 
 .feedback h2 {
@@ -680,6 +680,12 @@ form:after {
 	outline: none;
 }
 
+.test_container {
+	height: 510px;
+	width: 744px;
+	background-color: #fff;
+}
+
 .big_block1, .big_block2, .big_block3, .big_block4 {
 	width: 700px;
 	height: 350px;
@@ -699,165 +705,7 @@ form:after {
 
 }
 
-/*.test_container a {
+.test_container a {
 	padding: 50px;
 	display: block;
-}*/
-
-#slick-slide10 button {
-    width: 70px !important;
-    height: 70px !important;
-    border-radius: 50% !important;
-    /*display: inline-block !important;*/
-    /*position: absolute;*/
-    background: url(../img/pic1.png) no-repeat !important;
-    outline: none !important;
-    text-align: left !important;
-    cursor: pointer;
-    
-    
-}
-
-#slick-slide11 button {
-    background: url(../img/pic2.png) no-repeat;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    outline: none;
-    text-align: left;
-    /*vertical-align: text-top;*/
-    cursor: pointer;
-}
-
-#slick-slide12 button {
-    background: url(../img/pic3.png) no-repeat;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    outline: none;
-    cursor: pointer;
-}
-
-#slick-slide13 button {
-    background: url(../img/pic4.png) no-repeat;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    outline: none;
-	cursor: pointer;
-}
-
-#slick-slide04 button {
-    display: none;
-}
-
-.slick-dots li {
-    display: inline-block;
-    margin: 15px 40px;
-    cursor: pointer;
-}
-
-.slick-dots {
-    /*display: inline-block;*/
-    margin: 0 0 0 50px;
-    padding: 0 0 0 20px;
-    /*border: 1px solid grey;*/
-    border-radius: 50px; 
-    width: 620px;
-    -webkit-box-shadow: 0px 0px 30px 2px rgba(235,226,235,1);
--moz-box-shadow: 0px 0px 30px 2px rgba(235,226,235,1);
-box-shadow: 0px 0px 30px 2px rgba(235,226,235,1);
-}
-
-.white_container {
-	background-color: #fff;
-}
-
-.slider_test h3 {
-	font-size: 20px;
-	margin: 10px 0 5px 10px;
-	color: #009a9e;
-}
-
-.slide_text {
-	width: 300px;
-	float: left;
-	text-align: justify;
-	margin: 10px 0 20px 10px;
-	font-size: 16px;
-}
-
-.label {
-	font-size: 24px;
-	color: #d6557d;
-	margin-left: 10px;
-}
-
-.qry {
-	font-size: 14px;
-	color: #d6557d;
-	margin-left: 10px;
-}
-
-.slide_1 img {
-	float: right;
-}
-
-.slider_test {
-	height: 630px;
-	width: 720px;
-	/*background-color: #fff;*/
-}
-
-.slider_test .slick-prev, .slider_test .slick-next {
-	display: none !important;
-}
-
-.cover_test .white_container2 {
-	background-color: #fff;
-	width: 734px;
-	/*height: 300px;*/
-	margin: 0 auto;
-	padding: 5px;
-}
-
-.cover_test {
-	width: 744px;
-	/*height: 300px;*/
-	margin: 0 auto;
-
-}
-
-
-.white_container2 h2 {
-	margin: 0 0 15px 0;
-	text-align: center;
-}
-
-.award1 {
-	/*border: 1px solid red;*/
-	/*width: 700px;*/
-	padding: 0 0 0 60px;
-	/*height: 120px;*/
-	/*background: url(../img/Dobra_Marka_dada.png) no-repeat;*/
-}
-
-.award1 p {
-	width: 500px;
-	margin: 30px 0 0 180px;
-}
-
-.top {
-	width: 100px;
-	height: 100px;
-	border: 1px solid red;
-	position: fixed;
-	top: 510px;
-	left: 5px;
-	z-index: 1000;
-}
-
-.img_border {
-	border: 3px solid #009A9E;
-	border-radius: 10px;
 }
