@@ -1,29 +1,20 @@
-// $(document).ready(function(){
-// 	$("#menu").on("click","a", function (event) {
-// 		//отменяем стандартную обработку нажатия по ссылке
-// 		event.preventDefault();
+$(document).ready(function() {
 
-// 		//забираем идентификатор бока с атрибута href
-// 		var id  = $(this).attr('href'),
-
-// 		//узнаем высоту от начала страницы до блока на который ссылается якорь
-// 			top = $(id).offset().top;
-		
-// 		//анимируем переход на расстояние - top за 1500 мс
-// 		$('body,html').animate({scrollTop: top}, 1500);
-// 	});
-// });
-
-$(document).ready(function(){
-			// Плавный скролл по якорям
-			$('a[href^="#"]').click(function () { 
-			    elementClick = $(this).attr("href");
-				destination = $(elementClick).offset().top;
-				if($.browser.safari){
-				$('body').animate( { scrollTop: destination }, 100 );
-				} else {
-			    	$('html').animate( { scrollTop: destination }, 100 );
-				}
-				return false;
-		   });
+	//E-mail Ajax Send
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Спасибо за Ваш заказ, менеджер свяжется с Вами в ближайшее время!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
 		});
+		return false;
+	});
+
+});
