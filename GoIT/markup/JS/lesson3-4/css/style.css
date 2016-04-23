@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  display: block;
+  font-weight: normal;
+  margin-left: 25px;
+}
+
+input[type=checkbox] {
+  margin-right: 5px;
+}
+
+.pos {
+  display: block;
+  margin: 20px auto;
+}
