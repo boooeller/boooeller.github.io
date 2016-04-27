@@ -11,8 +11,9 @@
 	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
 	<script src="js/jquery-1.12.2.min.js"></script>
 	<script src="js/slick.min.js"></script>
-	<script src="js/anchor.js"></script>
+	<!--<script src="js/anchor.js"></script>-->
 	<script src="js/top.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
       $('.slider').slick({
@@ -29,10 +30,10 @@
 				<div class="text">	
 					<p>Хотите купить подгузники?</p>
 					<p class="call">ЗВОНИТЕ!</p>
-					<p class="number">(067) 233-78-63</p>
+					<p class="number">067 844 96 67</p>
 				</div>
 				<button class="button">
-					<a href="#link">ХОЧУ КУПИТЬ!</a>
+					<a class="anchor" href="#link">ХОЧУ КУПИТЬ!</a>
 				</button>
 			</div>	
 			<div class="logo"></div>
@@ -57,7 +58,7 @@
 						<p>Количество в пачке: 78 шт.</p>
 						<h3>Цена за пачку: 205 грн</h3>
 						<div class="buy">
-							<a href="#link">Купить</a>
+							<a class="anchor" href="#link">Купить</a>
 						</div>
 					</div>	
 				</section>
@@ -70,7 +71,7 @@
 						<p>Количество в пачке: 64 шт.</p>
 						<h3>Цена за пачку: 205 грн</h3>
 						<div class="buy">
-							<a href="#link">Купить</a>
+							<a class="anchor" href="#link">Купить</a>
 						</div>
 					</div>	
 				</section>
@@ -83,7 +84,7 @@
 						<p>Количество в пачке: 54 шт.</p>
 						<h3>Цена за пачку: 205 грн</h3>
 						<div class="buy">
-							<a href="#link">Купить</a>
+							<a class="anchor" href="#link">Купить</a>
 						</div>
 					</div>	
 				</section>
@@ -96,7 +97,7 @@
 						<p>Количество в пачке: 46 шт.</p>
 						<h3>Цена за пачку: 205 грн</h3>
 						<div class="buy">
-							<a href="#link">Купить</a>
+							<a class="anchor" href="#link">Купить</a>
 						</div>
 					</div>	
 				</section>		
@@ -128,7 +129,7 @@
 				<h2>ЗАПОЛНИТЕ ЗАЯВКУ,</h2>
 				<p>и мы свяжемся с Вами в ближайшее время</p>
 				<input type="text" name="Имя клиента:" required class="input" id="" placeholder="Ваше имя*">
-				<input type="tel" pattern="\(\d\d\d\) \d\d\d-\d\d-\d\d" data-mask="(999) 999-99-99" name="Номер телефона:" required class="input" id="" placeholder="Ваш номер телефона*">
+				<input type="tel" name="Номер телефона:" required class="input" id="phone" placeholder="Ваш номер телефона*">
 				<input type="email" name="E-mail:" required class="input" id="" placeholder="Ваш E-mail*">
 				<select name="Размер памперсов:" id="choice" class="input">
 					<option value="" default selected>Размер памперсов:</option>
@@ -137,14 +138,7 @@
 					<option value="4 для детей 3-6кг">4 для детей 7-18кг</option>
 					<option value="5 для детей 3-6кг">5 для детей 15-25кг</option>
 				</select>
-				<select name="Количество упаковок:" id="choice" class="input">
-					<option value="" default selected>Количество упаковок:</option>
-					<option value="1" class="test5">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-				</select>
+				<input type="text" pattern="\d*" name="Количество упаковок:" required class="input" id="" placeholder="Введите количество упаковок*:">
 				<button class="order_buttun">ЗАКАЗАТЬ ПОДГУЗНИКИ!</button>
 			</form>
 		</div>
@@ -153,12 +147,12 @@
 				<h2>Почему мы считаем подгузники Dada оптимальным выбором?</h2>
 				<section class="cover">	
 					<div class="box box1">
-						<p>Европейское качество (производство Польша), подтвержденное сертификатом качества института Матери и ребенка</p>
+						<p>Европейское качество (производство Словакия), подтвержденное сертификатом качества института Матери и ребенка</p>
 					</div>
 				</section>
 				<section class="cover">		
 					<div class="box box2">
-						<p>Долгий срок использования одного подгузника - до 12</p>
+						<p>Долгий срок использования одного подгузника - до 12 часов</p>
 					</div>
 				</section>
 				<section class="cover">	
@@ -180,17 +174,7 @@
 				<section class="cover">	
 					<div class="white_container">
 						<div class="slider_test">
-							<div class="slide_1">
-								<h3>Dada Premium Comfort Fit</h3>
-								<p class="label">Newborn</p>
-								<p class="qry">28 штук / 2-5 кг</p>
-								<p class="slide_text">Подгузники Dada Premium Comfort Fit Newborn предназначены для детей весом 2-5 кг. Дышащая подложка, мягкий и очень емкий вкладыш обеспечат комфорт Вашему ребенку. Анатомическая форма поглощающего вкладыша обеспечивает еще лучшее прилегание к телу малыша. Широкие липучки позволяют легко менять подгузники, а гибкие шторки не ограничивают движений ребенка! Применяемые в пеленках более мягкие оборки защищают нежную кожу ребенка между ножками. Подгузники Newborn имеют положительное заключение Института Матери и Ребенка.</p>
-								<img class="img1" src="img/big_pic1.png" alt="Slider1_pic" />
-								<div class="price">
-									<p>205</p>
-									<p class="uah">грн</p>
-								</div>
-							</div>
+							
 								
 							<div class="slide_1">
 								<h3>Dada Premium Comfort Fit</h3>
@@ -223,6 +207,17 @@
 								<p class="slide_text">Подгузники Dada Premium Comfort Fit Maxi предназначены для детей весом 7-18 кг. Новые подгузники тоньше, более гибкие и легче, а так же более впитывающие благодаря использованию технологии Super Core, которая обеспечит Вашему Ребенку еще большие комфорта. Подгузники остаются сухими до 12 часов. Анатомическая форма поглощающего вкладыша обеспечивает еще лучшее прилегание к телу малыша. Широкие липучки позволяют легко менять подгузники. Подгузники Maxi имеют положительное заключение Института Матери и Ребенка.</p>
 								<img class="img3" src="img/big_pic4.png" alt="Slider1_pic" />
 								<div class="price4">
+									<p>205</p>
+									<p class="uah">грн</p>
+								</div>
+							</div>
+							<div class="slide_1">
+								<h3>Dada Premium Comfort Fit</h3>
+								<p class="label">Junior</p>
+								<p class="qry">46 штук / 15-25 кг</p>
+								<p class="slide_text">Подгузники Dada Premium Comfort Fit Junior предназначены для детей весом 15-25 кг. Новые подгузники тоньше, более гибкими и легче, а так же более впитывающие благодаря использованию технологии Super Core, которая обеспечит Вашему Ребенку еще большие комфорта. Подгузники остаются сухими в течение 12 часов. Анатомическая форма поглощающего вкладыша обеспечивает еще лучшее прилегание к телу малыша. Широкие липучки позволяют легко менять подгузники. Подгузники Maxi имеют положительное заключение Института Матери и Ребенка.</p>
+								<img class="img1" src="img/big_pic1.png" alt="Slider1_pic" />
+								<div class="price">
 									<p>205</p>
 									<p class="uah">грн</p>
 								</div>
@@ -278,18 +273,20 @@
 						<h3>
 						    <a href="http://otzovik.com/reviews/detskie_podguzniki_dada" rel="nofollow" target="_blank">Читать все отзывы про подгузники Dada</a>
 						</h3>
+						
 					</noindex>
 				</div>
 			</div>
 		</div>
 		<footer>
 			<div class="map">
-				<iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.18319007343!2d30.458965915150074!3d50.51215819079858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d27c3a9ddc77%3A0x8edd5c618dd5ed3a!2z0LLRg9C7LiDQkdC10YDQtdC20LDQvdGB0YzQutCwLCAxMtCRLCDQmtC40ZfQsiwg0KPQutGA0LDQuNC90LA!5e0!3m2!1sru!2sua!4v1457606965111" width="100%" height="300" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+				<iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.3928961876877!2d30.458448815733412!3d50.50825597948332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d278d3f4fad5%3A0x82c06fe925252470!2z0LLRg9C7LiDQndC-0LLQvtC30LDQsdCw0YDRgdGM0LrQsCwgMjEsINCa0LjRl9Cy!5e0!3m2!1sru!2sua!4v1461317473214" width="100%" height="300" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 			</div>
 			<div class="contacts">
-				<h3>(097) 824 05 05</h3>
+				<h3>067 844 96 67</h3>
+				<p>звонить в случае самовывоза</p>
 				<p>Адрес склада:</p>
-				<p>ул. Бережанская 12Б</p>
+				<p>ул. Новозабарская, 21</p>
 			</div>
 		</footer>
 	</div>
@@ -306,6 +303,18 @@
 		  });
 		});
 	</script>
+	<script type="text/javascript">
+			jQuery(function($){
+			   $("#phone").mask("+38 (999) 999-9999");
+			});
+	</script>
 	<script src="js/script.js"></script>
+<script type="text/javascript">
+	$("body").on("click", "a.anchor", function(){
+    var idtop = $($(this).attr("href")).offset().top;
+    $('html,body').animate({scrollTop: idtop}, 500);
+    return false;
+});
+</script>
 </body>
 </html>

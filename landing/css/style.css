@@ -27,7 +27,16 @@ header {
 	position: relative;
 	top: 9px;
 	right: 12%;
-	background-image: url(../img/deva_2.png);
+	background: url(../img/deva_2.png) no-repeat;
+	/*border: 1px solid red;*/
+}
+
+@media screen and (max-width: 1200px) {
+  .logo {
+    /*visibility: hidden;*/
+    display: none;
+    /*border: 1px solid green;*/
+  }
 }
 
 .small_logo {
@@ -97,6 +106,15 @@ header {
 	top: 35%;
 }
 
+@media screen and (max-width: 1200px) {
+.slogan p:before {
+	content: url(../img/elka-ico.png);
+	position: absolute;
+	left: 5%;
+	top: 35%;
+	}
+}
+
 .content {
 	min-height: 513px;
 	background-color: #e3e5e7;
@@ -135,13 +153,35 @@ header {
 	top: 40px;
 }
 
+@media screen and (max-width: 1200px) {
+.slogan2 p:before {
+	content: url(../img/elka-ico.png);
+	position: absolute;
+	left: 19%;
+	top: 35%;
+	}
+}
+
 /*PRODUCTS BLOCK START*/
 
 .container_products {
 	min-height: 500px;
-	width: 1160px;
-	margin: 0 auto;
+	/*width: 1160px;*/
+	/*margin: 0 auto;*/
+	padding-left: 100px;
 } 
+
+@media screen and (max-width: 680px) {
+  .container_products {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .container_products {
+    margin-left: 300px;
+  }
+}
 
 .product {
 	width: 578px;
@@ -332,6 +372,15 @@ form:after {
 	bottom: 64px;
 }
 
+@media screen and (max-width: 1200px) {
+  form:after {
+	content: url(../img/arrow.png);
+	position: absolute;
+	right: 15%;
+	bottom: 64px;
+	}
+}
+
 /*FORM END*/
 
 /*REASONS TO BUY BLOCK*/
@@ -435,8 +484,8 @@ form:after {
 
 .price {
 	position: absolute;
-	right: 77px;
-	bottom: 79px;
+	right: 25px;
+	bottom: 87px;
 	font-size: 20px;
 	color: #BA894C;
 }
@@ -496,14 +545,14 @@ form:after {
     width: 70px !important;
     height: 70px !important;
     border-radius: 50% !important;
-    background: url(../img/pic1.png) no-repeat !important;
+    background: url(../img/pic2.png) no-repeat !important;
     outline: none !important;
     text-align: left !important;
     cursor: pointer;
 }
 
 #slick-slide11 button {
-    background: url(../img/pic2.png) no-repeat;
+    background: url(../img/pic3.png) no-repeat;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -513,7 +562,7 @@ form:after {
 }
 
 #slick-slide12 button {
-    background: url(../img/pic3.png) no-repeat;
+    background: url(../img/pic4.png) no-repeat;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -522,7 +571,7 @@ form:after {
 }
 
 #slick-slide13 button {
-    background: url(../img/pic4.png) no-repeat;
+    background: url(../img/pic1.png) no-repeat;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -642,7 +691,7 @@ form:after {
 
 .slider {
 	width: 858px;
-	height: 188px;
+	/*height: 188px;*/
 	border: 1px solid #ccc;
 	border-radius: 10px;
 	margin: 30px auto;
@@ -656,7 +705,7 @@ form:after {
 	background-image: url(../img/slider_arrows.png) !important; 
 	background-position: 42px 0px !important; 
 	position: absolute !important;
-	top: 70px !important;
+	top: 35% !important;
 	right: -20px !important;
 	cursor: pointer !important;
 	background-color: transparent;
@@ -671,7 +720,7 @@ form:after {
 	background-image: url(../img/slider_arrows.png); 
 	background-position: 86px 0px;
 	position: absolute;
-	top: 70px;
+	top: 35%;
 	left: -20px;
 	cursor: pointer;
 	background-color: transparent;
