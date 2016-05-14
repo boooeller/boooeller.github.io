@@ -1,0 +1,51 @@
+#timer {
+	margin: 0 auto;
+	width: 500px;
+	text-align: center;
+}
+
+.time {
+	display: block;
+	border: 10px solid;
+	border-radius: 50px;
+	padding: 20px;
+	font-size: 100px;
+	text-align: center;
+	background-color: #E3E1EA;
+	font-weight: bold;
+}
+
+button {
+	margin-top: 20px;
+	display: inherit;
+	border: 10px solid;
+	border-radius: 20px;
+	padding: 10px 30px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.left-button {
+	float: left;
+}
+
+.right-button {
+	float: right;
+}
+
+#start{
+	background-color: #60E448;
+}
+
+#stop {
+	background-color: #6DA5F9;
+	display: none;
+}
+
+#clear {
+	background-color: #E20437;
+}
+
+.miliseconds {
+	font-size: 30px;
+}
