@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+	margin: 50px auto;
+	padding: 20px;
+	width: 550px;
+	border: 
+	-webkit-box-shadow: 5px 6px 15px -1px rgba(194,194,194,1);
+	-moz-box-shadow: 5px 6px 15px -1px rgba(194,194,194,1);
+	box-shadow: 5px 6px 15px -1px rgba(194,194,194,1);
+	color: #595959;
+}
+
+fieldset {
+	position: relative;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+input {
+	padding: 0 0 0 5px;
+	height: 20px;
+	border-radius: 10px;
+	outline: none;
+}
+
+label {
+	display: inline-block;
+	width: 75px;
+	margin: 10px;
+}
+
+button {
+	margin: 20px 0 0 0;
+  	padding: 15px;
+	width: 200px;
+	height: 50px;
+	border: 3px solid #ccc;
+	border-radius: 30px;
+  	outline: none;
+  	background: #fff;
+  	color: #aaa;
+  	font-size: 16px;
+  	font-weight: bold;
+  	letter-spacing: 2px;
+	cursor: pointer;
+}
+
+button:hover {
+   	background: #ccc;
+   	color: #fff;
+}
+
+.help {
+	display: none;
+	padding: 5px;
+	height: 20px;
+	border: 2px solid #ccc;
+	border-radius: 30px;
+}
+
+.help1 {
+	float: right;
+	position: absolute;
+	top: 10px;
+	left: 300px;
+	display: none;
+}
+
+.help2 {
+	float: right;
+	position: absolute;
+	top: 50px;
+	left: 300px;
+	display: none;
+}
+
+.help3 {
+	float: right;
+	position: absolute;
+	top: 90px;
+	left: 300px;
+	display: none;
+}
