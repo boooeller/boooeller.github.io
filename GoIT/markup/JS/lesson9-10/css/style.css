@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+	position: relative;
+	margin: 0 auto;
+	width: 1000px;
+	height: 2000px;
+}
+
+form {
+	width: 350px;
+	float: right;
+	margin: 50px 0 0 0;
+}
+
+.box {
+	position: relative;
+	margin-bottom: 20px;
+	padding: 20px;
+	height: 100px;
+	width: 200px;
+	font-size: 18px;
+	font-family: Tahoma;
+	color: white;
+	box-sizing: border-box;
+	background: green;
+	text-align: center;
+}
+
+.css-box {
+	left: 0;
+	transition: all 2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.css-box-animated {
+	left: 200px;
+	opacity: 0;
+}
+
+.js-checkbox {
+	float: left;
+	width: 100px;
+}
+
+.niceCheck {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	cursor: pointer;
+	background: url(../img/checkbox.png);
+}
+.niceCheck input {
+	display: none;
+}
+		
+input[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+
+label {
+	cursor: pointer;
+}
+
+label:after {
+	content: " ";
+	position: relative;
+	left: 50px;
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	background: url(../img/checkbox-2.png);
+}
+
+input[type=checkbox]:checked + label:after {
+background-position: 0 -17px;
+}
+
+label:hover:after {
+background-position: 0 -34px;
+}
+
+input[type=checkbox]:checked + label:hover:after {
+background-position: 0 -51px;
+}
+
+.clearfix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+
+nav {
+	background-color: #FF6464;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+}
+
+nav li ul {
+    position: absolute;
+    left: 0;
+    top: 48px;
+    width: 200px;
+    background-color: #FF6464;
+}
+
+nav li li {
+    position: relative;
+    margin: 0;
+    display: block;
+}
+
+nav li li ul {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    margin: 0;
+}
+
+nav a {
+    padding: 15px 12px;
+    margin: 0 12px;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color: #000;
+}
+
+nav li li a {
+    margin: 0 10px;
+    border-bottom: 1px solid rgb(200,50,50);
+}
+
+nav li li:last-child a {
+    border-bottom:none;
+}
+
+ul.submenu {
+    display:none;
+}
+
+nav li.dropdown > a {
+    background: url('../img/arrow-down.png') right 20px no-repeat;
+}
+
+nav li li.dropdown > a {
+    background: url('../img/arrow-right.png') right 16px no-repeat;
+}
