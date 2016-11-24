@@ -62,11 +62,11 @@ input[type=checkbox] {
 	clip: rect(0, 0, 0, 0);
 }
 
-label {
+span {
 	cursor: pointer;
 }
 
-label:after {
+span:after {
 	content: " ";
 	position: relative;
 	left: 50px;
@@ -76,15 +76,15 @@ label:after {
 	background: url(../img/checkbox-2.png);
 }
 
-input[type=checkbox]:checked + label:after {
+input[type=checkbox]:checked + span:after {
 background-position: 0 -17px;
 }
 
-label:hover:after {
+span:hover:after {
 background-position: 0 -34px;
 }
 
-input[type=checkbox]:checked + label:hover:after {
+input[type=checkbox]:checked + span:hover:after {
 background-position: 0 -51px;
 }
 
