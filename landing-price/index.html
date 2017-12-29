@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ценовое предложение</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<script src="https://use.fontawesome.com/15a4f15d9a.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="sup-man">
+			<img src="img/background.png"/>
+		</div>	
+		<div class="slogan">
+			<h1>Видео программ</h1>
+		</div>
+		<div class="slider">
+			<div>
+				<iframe width="300" height="315" src="https://www.youtube.com/embed/1mGIW6HHiHs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+			</div>
+			<div>
+				<iframe width="300" height="315" src="https://www.youtube.com/embed/6kTYinkMsnc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+			</div>
+			<div>
+				<iframe width="300" height="315" src="https://www.youtube.com/embed/Clyqkzu12Yg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+			</div>
+			<div>
+				<iframe width="300" height="315" src="https://www.youtube.com/embed/1mGIW6HHiHs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+			</div>
+			<div>
+				<iframe width="300" height="315" src="https://www.youtube.com/embed/6kTYinkMsnc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+			</div>
+			<div>
+				<iframe width="300" height="315" src="https://www.youtube.com/embed/Clyqkzu12Yg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="slogan phrase">
+			<h1>Охват вся Украина, СНГ, Восточная и Западная Европа, Канада</h1>
+		</div>
+		<div class="block-list">
+			<h3>Предлагаем рекламное размещение на нашем канале, тел. 0933338643</h3>
+			<div class="list">
+				<ul>
+					<li>Интервью (гость в студии)</li>
+					<li>Сюжет (выездная съемка)</li>
+					<li>Интервью с студии с сюжетом</li>
+					<li>Спонсор програмы (заставки, логотипы, упоминание ведущим, анонсы)</li>
+					<li>Product Placement(продукт в кадре с упоминанием ведущего)</li>
+				</ul>
+			</div>
+			<div class="form">
+				<form action="#">
+					<p>Оставьте e-mail, чтобы получить коммерческое предложение</p>
+					<input type="text" name="name" required class="input" id="" placeholder="Ваше имя*">
+					<input type="number" pattern="\(\d\d\d\) \d\d\d-\d\d-\d\d" data-mask="(999) 999-99-99" name="phone" required class="input" id="" placeholder="Ваш номер телефона*">
+					<input type="email" name="email" class="input" id="" placeholder="Ваш e-mail*">
+					<input type="button" value="Получить предложение">
+				</form>
+			</div>
+		</div>
+		<div id="footer-widgets">
+			<div class="container">
+				<div class="inner-wrapper">
+					<div class="footer-active-2 footer-widget-area">
+						<aside id="text-2" class="widget widget_text">
+							<h3 class="widget-title">Контакты</h3>			
+							<div class="textwidget">Наш адрес: 04119, Киев, ул. Якира, 13-б (044) 207-44-85, 207-47-17, 47-16</div>
+						</aside>
+					</div><!-- .footer-widget-area -->
+					<div class="footer-active-2 footer-widget-area">
+						<aside id="magazine-plus-social-2" class="widget magazine_plus_widget_social">
+							<h3 class="widget-title">Мы в соцсетях</h3>
+							<ul class="size-medium">
+								<li>
+									<a href="https://www.facebook.com/PerviyDelovoy/" target="_blank">
+										<span class="title screen-reader-text">&lt;span class="title screen-reader-text"&gt;Facebook&lt;/span&gt;</span>
+									</a>
+								</li>
+								<li>
+									<a href="http://www.youtube.com/user/FirstBusinesschannel" target="_blank">
+										<span class="title screen-reader-text">&lt;span class="title screen-reader-text"&gt;YouTube&lt;/span&gt;</span>
+									</a>
+								</li>
+							</ul>
+						</aside>
+					</div><!-- .footer-widget-area -->
+				</div><!-- .inner-wrapper -->
+			</div><!-- .container -->
+		</div>
+	</div>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+        autoplay: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+      });
+    });
+  </script>	
+</body>
+</html>
