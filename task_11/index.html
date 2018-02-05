@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Task-11</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://cdn.dribbble.com/assets/favicon-63b2904a073c89b52b19aa08cebc16a154bcf83fee8ecc6439968b1e6db569c7.ico" rel="icon">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+		<script src="https://use.fontawesome.com/15a4f15d9a.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="container">
+				<header>
+					<button type="button" class="backward header-button-hover-style">
+						<i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+						go back
+					</button>
+					<a href="#" class="logo"></a>
+					<button type="button" class="login header-button-hover-style">
+						<i class="fa fa-user" aria-hidden="true"></i>
+						sing in						
+					</button>
+				</header>
+				<main>
+					<section class="order-help-wrapper clearfix">
+						<div class="order-wrapper clearfix">
+							<div class="order-info">
+								<h3>
+									<i class="fa fa-clipboard" aria-hidden="true"></i>
+									your order
+								</h3>
+								<ul class="order-captions"> 
+									<li>items
+										<ul>
+											<li>2 documents</li>
+										</ul>
+									</li>
+									<li>details
+										<ul>
+											<li>2 languages</li>
+										</ul>
+									</li>
+									<li>price
+										<ul>
+											<li>$ 696.06</li>
+										</ul>
+									</li>
+									<li>delivery
+										<ul>
+											<li>48 hours*</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="order-buttons">
+								<button type="submit" form="data" class="button-hover-style-background place-order-button button">
+									place order
+								</button>
+								<button type="button" form="data" onclick="window.print()" class="button-hover-style-background print-button button">
+									print a quate
+								</button>
+							</div>
+						</div>
+						<div class="help-wrapper">
+							<h3>
+								<i class="fa fa-life-ring" aria-hidden="true"></i>
+								help center
+							</h3>
+							<p>If you need assistantce while placing your order, contact one of our beloved Project Manager by phone or email</p>
+							<address>
+								<a href="tel:+9710555555">+971 (0) 555 555</a>
+								<a href="mailto:help@qtest.com">help@qtest.com</a>
+							</address>
+						</div>
+					</section>
+					<form id="data" action="#">
+						<section class="translate-wrapper">
+							<h1>
+								<span>select what you want to translate</span>
+							</h1>
+							<fieldset>
+								<div class="select-type">
+									<input required type="radio" name="var" value="website" id="website"/>
+									<label for="website" class="translane-doc-type-label select-wrapper">				
+										<img src="img/website.png" alt="website"/>
+										<span>Website</span>
+									</label>						
+								</div>
+								<div class="select-type">
+									<input required type="radio" name="var" value="website" id="documents"/>
+									<label for="documents" class="translane-doc-type-label select-wrapper">				
+										<img src="img/documents.png" alt="documents"/>
+										<span>Documents</span>
+									</label>						
+								</div>
+								<div class="select-type">
+									<input required type="radio" name="var" value="website" id="social-account"/>
+									<label for="social-account" class="translane-doc-type-label select-wrapper">				
+										<img src="img/social-account.png" alt="social-account"/>
+										<span>Social Account</span>
+									</label>						
+								</div>
+							</fieldset>	
+						</section>
+						<section>	
+							<h2>Upload your documents <span>(Doc, Docx, Text, PDF, Markdown)</span></h2>
+							<input type="file" accept=".doc, .docx, .txt, .pdf, .md" id="upload">
+						    <label for="upload" class="upload-button">
+							<i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload a new file
+						    </label>
+
+						  <table class="files-table">
+							<thead>
+							  <tr>
+								<th>File name</th>
+								<th>File size</th>
+								<th>Number of words</th>
+								<th>Remove</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td>
+								  <i class="fa fa-file-text" aria-hidden="true"></i>
+								  business_operations.docx
+								</td>
+								<td>78kb</td>
+								<td>842</td>
+								<td>
+								  <button type="button" class="remove-button" aria-label="Remove">
+									<i class="fa fa-trash" aria-hidden="true"></i>
+								  </button>
+								</td>
+							  </tr>
+							  <tr>
+								<td>
+								  <i class="fa fa-file-text" aria-hidden="true"></i>
+								  business_financial.docx
+								</td>
+								<td>26kb</td>
+								<td>2,326</td>
+								<td>
+								  <button type="button" class="remove-button" aria-label="Remove">
+									<i class="fa fa-trash" aria-hidden="true"></i>
+								  </button>
+								</td>
+							  </tr>
+							</tbody>
+						  </table>						
+						</section>
+						<section>		
+							<h2>Choose your languages pairing</h2>
+							<fieldset>
+								<div class="languages-from-wrapper">
+									<p>from</p>
+									<div class="select-languages-wrapper">
+										<select class="select-language-from">
+											<option value="English">English</option>
+											<option value="Italian">Italian</option>
+											<option value="Russian">Russian</option>
+										</select>
+									</div>
+								</div>
+							</fieldset>
+							<fieldset>
+								<div class="languages-to-wrapper">
+									<p>to</p>
+									<div class="select-languages-wrapper">
+										<select class="select-language-from">
+											<option value="Arabic">Arabic</option>
+											<option value="English">English</option>
+											<option value="Italian">Italian</option>
+											<option value="Russian">Russian</option>
+										</select>
+									</div>
+									<div class="select-extra-languages-wrapper">
+										<select class="select-language-from">
+											<option value="Kurdish">Kurdish</option>
+											<option value="English">English</option>
+											<option value="Italian">Italian</option>
+											<option value="Russian">Russian</option>
+										</select>
+										<i class="fa fa-trash" aria-hidden="true"></i>
+									</div>
+									<div class="add-more-languages-button-wrapper">
+										<button class="add-more-languages-button">
+											<i class="fa fa-plus" aria-hidden="true"></i>
+											Add
+										</button>
+									</div>
+								</div>
+							</fieldset>
+						</section>	
+						<section>
+							<aside class="desired-tone-wrapper">
+								<h2>Select your desired tone</h2>
+								<fieldset>
+									<div class="select-type">
+										<input required type="radio" name="tone" value="documents" id="friendy-casual"/>
+										<label for="friendy-casual" class="select-wrapper desire-ton-block">								
+											<i class="fa fa-comments" aria-hidden="true"></i>
+											<span>Friendy / Casual</span>
+										</label>		
+									</div>
+									<div class="select-type">
+										<input required type="radio" name="tone" value="documents" id="corporate-pro"/>
+										<label for="corporate-pro" class="select-wrapper desire-ton-block">								
+											<i class="fa fa-suitcase" aria-hidden="true"></i>
+											<span>Corporate / Pro</span>	
+										</label>
+									</div>
+									<div class="select-type">
+										<input required type="radio" name="tone" value="documents" id="media-formal"/>
+										<label for="media-formal" class="select-wrapper desire-ton-block">								
+											<i class="fa fa-bullhorn" aria-hidden="true"></i>
+											<span>Media / Formal</span>	
+										</label>
+									</div>	
+								</fieldset>			
+							</aside>							
+							<aside class="range-wrapper">
+								<h2>Tell us how urgent this job</h2>								
+								<div class="input-wrapper">
+									<input type="range" min="0" max="2">
+									<ul class="range-var">
+										<li>i got time</li>
+										<li class="color">average</li>
+										<li>yesterday</li>
+									</ul>
+								</div>
+								<legend>
+									<h4>timeline info</h4>
+									<p>With an <span>average</span> timeline set up, our expert translator can take a reasonable amount of time perfecting your translation</p>
+								</legend>
+							</aside>
+						</section>
+						<section class="payment-wrapper">
+							<h2>Sing up and choose a payment method</h2>
+							<p>Already have an account with us? 
+								<a href="#">Sing in</a>.
+							</p>
+							<div class="payment-input-container">
+								<div class="payment-input-wrapper">
+									<label for="name">full name</label>
+									<input type="text" name="name" required id="name" minlength="2" pattern="^[a-zA-Z\s\.\-]*$">
+									<label for="name"></label>
+								</div>
+							</div>
+							<div class="payment-input-container">
+								<div class="payment-input-wrapper">
+									<label for="email">email address</label>
+									<input type="email" name="email" required id="email">
+									<label for="email"></label>
+								</div>
+								<div class="payment-input-wrapper">
+									<label for="password">choose a password</label>
+									<input type="password" name="password" required id="password" minlength="7">
+									<label for="password"></label>
+								</div>
+							</div>
+							<div class="payment-method-container">
+								<fieldset>
+									<div class="select-type">
+										<input required type="radio" name="payment" value="visa-mastercard" id="visa-mastercard"/>
+										<label for="visa-mastercard" class="select-wrapper payment-wrapper">
+											<img src="img/visa-mastercard.png" alt="visa-mastercard"/>								
+										</label>
+									</div>
+									<div class="select-type">
+										<input required type="radio" name="payment" value="visa-mastercard" id="paypal"/>
+										<label for="paypal" class="select-wrapper payment-wrapper">
+											<img src="img/paypal.png" alt="paypal"/>							
+										</label>
+									</div>
+									<div class="select-type">
+										<input required type="radio" name="payment" value="visa-mastercard" id="amazon"/>
+										<label for="amazon" class="select-wrapper payment-wrapper">
+											<img src="img/amazon.png" alt="amazon"/>								
+										</label>
+									</div>
+								</fieldset>
+								<div class="payment-method-info-container">
+									<div class="payment-input-wrapper card-number">
+										<label for="card-number">card number</label>
+										<input type="text" name="card-number" required id="card-number" pattern="[0-9]{13,16}" maxlength="16">
+										<label for="card-number"></label>
+									</div>
+									<div class="payment-input-wrapper">
+										<label for="expiry-date">expiry date</label>
+										<input type="text" name="expiry-date" required id="expiry-date" minlength="6" maxlength="6" placeholder="DD / MM / YY">
+										
+									</div>
+									<div class="payment-input-wrapper">
+										<label for="cvv-password">code</label>
+										<input type="password" name="cvv-password" required id="cvv-password" minlength="3" maxlength="3">
+										
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="confirm-container">
+							<input type="checkbox" id="terms-conditions" required>
+							<label for="terms-conditions">I agree to the
+							  <a href="#">Terms &amp; Conditions</a>
+							</label>							
+							<button type="submit" class="button-hover-style-background place-order-button button">
+								place order
+							</button>
+							<button type="button" onclick="window.print()" class="button-hover-style-background print-button button">
+								print a quate
+							</button>								
+						</section>
+					</form>			
+				</main>				
+			</div>
+			<footer class="clearfix">
+				<section class="info">
+					<h5 class="title">
+					  <i class="fa fa-heart-o" aria-hidden="true"></i>
+					  What we do
+					</h5>
+					<p>
+					  <em>
+						We provide a full range of language services including content development, document, website and social media accounts translations.
+					  </em>
+					</p>
+				</section>
+				<section class="address">
+					<h5 class="title">
+					  <i class="fa fa-compass" aria-hidden="true"></i>
+					  Our main office
+					</h5>
+					<address>
+					  <p>Dubai, UAE</p>
+					  <p>P.O. Box: 502735</p>
+					  <a href="tel:+971(0)44278128">Phone: +971(0) 44278128</a>
+					</address>
+				</section>
+				<section class="social">
+					<h5 class="title">
+					  <i class="fa fa-share-alt" aria-hidden="true"></i>
+					  Connect with us
+					</h5>
+					<nav>
+					  <ul>
+						<li>
+						  <a href="#">
+							<i class="fa fa-facebook-square" aria-hidden="true"></i>
+							Facebook
+						  </a>
+						</li>
+						<li>
+						  <a href="#">
+							<i class="fa fa-twitter-square" aria-hidden="true"></i>
+							Twitter
+						  </a>
+						</li>
+						<li>
+						  <a href="#">
+							<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+							Linkedin
+						  </a>
+						</li>
+					  </ul>
+					</nav>
+				</section>
+				<a href="#" class="logo"></a>
+			</footer>
+		</div>
+	</body>
+</html>
