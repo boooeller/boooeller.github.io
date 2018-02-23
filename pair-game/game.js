@@ -1,5 +1,18 @@
 var game_array = ['red', 'red', 'blue', 'blue', 'green', 'green', 'tomato', 'tomato', 'yellow', 'yellow', 'magenta', 'magenta', 'indigo', 'indigo', 'brown', 'brown', 'lime', 'lime' ];
 
+var howHard = prompt('введите сложность (easy, medium, hard)', '');
+var delay;
+if (howHard == 'easy') {
+	game_array.splice(0, 12);
+	delay = 2000;
+}  else if (howHard == 'medium') {
+	game_array.splice(0, 6);
+	delay = 5000;
+} else if (howHard == 'hard') {
+	alert('ну удачи :)')
+	delay = 10000;
+}
+
 function Shuffle(o) {
     for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
     return o;
@@ -89,22 +102,29 @@ function handler() {
 }
 
 
+
 function openItemCardsTest() {
-	card.forEach(function(card) {
-		card.classList.add('open');
+	card.forEach(function(card , i) {
+		setTimeout(function() {
+			card.classList.add('open');
+		}, i * 300);
+		
 	});
 };
-
-setTimeout(openItemCardsTest, 500);
-
 
 function removeItemCardsTest() {
-	card.forEach(function(card) {
-		card.classList.remove('open');
+	card.forEach(function(card , i) {
+		setTimeout(function() {
+			card.classList.remove('open');
+		}, i * 300);
+		
 	});
 };
 
-setTimeout(removeItemCardsTest, 5500);
+
+openItemCardsTest()
+
+setTimeout(removeItemCardsTest, delay);
 
 
 card.forEach(function(card) {
