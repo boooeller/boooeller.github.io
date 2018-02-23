@@ -51,7 +51,7 @@ function hideItemCards(type) {
 	});
 	itemCards.length = 0;
 	//var score = 1;
-	alert('+ 1 score');
+	//alert('+ 1 score');
 	score = score + 1;
 	console.log('score = ' + score);
 	scoreContainer.innerHTML = 'Ваши очки: ' + score;
