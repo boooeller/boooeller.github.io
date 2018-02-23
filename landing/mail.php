@@ -5,7 +5,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 //Script Foreach
 $c = true;
 $project_name = trim("Подгузники Dada");
-$admin_email  = trim("ktuluf@gmail.com");
+$admin_email  = trim("boooeller@gmail.com");
 $form_subject = trim("Оформление заказа");
 if ( $method === 'POST' ) {
 
