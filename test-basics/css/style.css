@@ -41,6 +41,7 @@ header {
 .header-button {
 	margin-top: 35px;
 	padding: 17px 55px;
+	display: inline-block;
 	box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
 	border-radius: 50px;
 	border: none;
@@ -48,6 +49,14 @@ header {
 	color: #072b6f;
 	font-weight: 700;
 	font-size: 18px;
+	text-decoration: none;
+	-webkit-transition: 0.9s;
+	-o-transition: 0.9s;
+	transition: 0.9s;
+}
+
+.header-button:hover {
+	box-shadow: none;
 }
 
 .header-small {
@@ -136,12 +145,23 @@ footer {
 
 .footer-button {
 	padding: 12px 40px;
+	display: inline-block;
 	border-radius: 24px;
 	border: 1px solid #ffffff;
 	background: transparent;
 	color: #deedfe;
 	font-size: 18px;
 	font-weight: 400;
+	text-decoration: none;
+	-webkit-transition: 0.9s;
+	-o-transition: 0.9s;
+	transition: 0.9s;
+}
+
+.footer-button:hover{
+	color: #3a7dfd;
+	background-color: #fff;
+
 }
 
 .wrapper-test {
